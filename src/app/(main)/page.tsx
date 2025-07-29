@@ -2,23 +2,20 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import { Logo } from "@/components/layout/logo";
 
 export default function HomePage() {
   return (
     <div className="animate-in fade-in duration-500">
       <section className="relative h-[80vh] min-h-[600px] flex items-center justify-center text-center text-white">
-        <div className="absolute inset-0 bg-black/50 z-10" />
+        <div className="absolute inset-0 bg-black/60 z-10" />
         <Image
-          src="https://placehold.co/1600x900.png"
-          alt="Modern architectural building"
+          src="https://storage.googleapis.com/maker-studio-5a503.appspot.com/user_managed/e4f2be1d-845a-48d0-9a2c-982823616644/image.png"
+          alt="The Archithan Architects company logo"
           layout="fill"
           objectFit="cover"
-          className="z-0 opacity-20"
-          data-ai-hint="modern architecture"
+          className="z-0"
           priority
         />
-        <Logo className="absolute inset-0 w-full h-full text-primary/10 z-0" />
         <div className="relative z-20 container mx-auto px-4">
           <h1 className="font-headline text-5xl md:text-7xl lg:text-8xl font-bold text-primary tracking-tight">
             The Archithan Architects
