@@ -10,8 +10,8 @@ export default function HomePage() {
       <section className="relative h-[80vh] min-h-[600px] flex items-center justify-center text-center text-white">
         <div className="absolute inset-0 bg-black/60 z-10" />
         <Image
-          src="https://storage.googleapis.com/maker-studio-5a503.appspot.com/user_managed/e4f2be1d-845a-48d0-9a2c-982823616644/image.png"
-          alt="Modern architectural building"
+          src="https://storage.googleapis.com/maker-studio-5a503.appspot.com/user_managed/2c8c111c-2c93-4704-92d5-259703c734e5/image.png"
+          alt="The Archithan Architects company logo"
           layout="fill"
           objectFit="cover"
           className="z-0"
