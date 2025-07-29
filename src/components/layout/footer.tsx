@@ -10,7 +10,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
           <div className="flex flex-col items-center md:items-start gap-4">
              <Link href="/" className="flex items-center gap-2" passHref>
-                <span className="text-2xl font-bold text-primary font-headline">
+                <span className="text-2xl font-bold text-foreground font-headline">
                     The Archithan Architects
                 </span>
             </Link>
@@ -19,7 +19,7 @@ export function Footer() {
             </p>
           </div>
           <div className="md:justify-self-center">
-            <h3 className="font-headline text-lg font-semibold text-primary mb-4">Quick Links</h3>
+            <h3 className="font-headline text-lg font-semibold text-foreground mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li><Link href="/projects" className="hover:text-primary transition-colors">Projects</Link></li>
               <li><Link href="/about" className="hover:text-primary transition-colors">About Us</Link></li>
@@ -28,7 +28,7 @@ export function Footer() {
             </ul>
           </div>
           <div className="md:justify-self-end">
-             <h3 className="font-headline text-lg font-semibold text-primary mb-4">Connect With Us</h3>
+             <h3 className="font-headline text-lg font-semibold text-foreground mb-4">Connect With Us</h3>
             <div className="flex justify-center md:justify-start space-x-4">
               <Button variant="ghost" size="icon" asChild>
                 <Link href="#" aria-label="Facebook"><Facebook className="h-6 w-6 text-accent hover:text-primary transition-colors"/></Link>
