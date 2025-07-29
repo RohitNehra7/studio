@@ -6,37 +6,23 @@ import { usePathname } from 'next/navigation';
 export function PageLoader() {
   const pathname = usePathname();
   const [loading, setLoading] = useState(false);
+  const [key, setKey] = useState(0);
 
   useEffect(() => {
-    // Previous pathname logic to avoid showing loader on initial load
-    let previousPathname = pathname;
+    setLoading(true);
+    setKey(prev => prev + 1); // Re-trigger animation
 
-    const handleStart = () => {
-      setLoading(true);
-    };
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 500); // Should match animation duration or be slightly longer
 
-    const handleComplete = (newPathname: string) => {
-       if (previousPathname !== newPathname) {
-          setLoading(false);
-          previousPathname = newPathname;
-       }
-    };
-    
-    // Simulate navigation start
-    handleStart();
-
-    // Simulate navigation end after a short delay
-    const timer = setTimeout(() => handleComplete(pathname), 300);
-
-    return () => {
-      clearTimeout(timer);
-    };
+    return () => clearTimeout(timer);
   }, [pathname]);
 
   if (!loading) return null;
 
   return (
-    <div className="fixed top-0 left-0 right-0 h-1 z-50">
+    <div key={key} className="fixed top-0 left-0 right-0 h-1 z-50">
       <div className="h-full bg-primary animate-loader" />
     </div>
   );
