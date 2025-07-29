@@ -47,7 +47,7 @@ export default function HomePage() {
             <div className="order-2 md:order-1">
               <h2 className="font-headline text-3xl md:text-4xl text-primary mb-6">Designing with Purpose</h2>
               <div className="space-y-6">
-                <div className="flex items-start gap-4">
+                <div className="flex items-start gap-4 p-6 rounded-lg bg-gradient-to-br from-card to-card/50">
                   <div className="bg-primary/10 text-primary p-3 rounded-full">
                     <Palette className="h-6 w-6" />
                   </div>
@@ -56,7 +56,7 @@ export default function HomePage() {
                     <p className="text-muted-foreground">Our approach blends timeless beauty with functional design, creating spaces that are both inspiring and livable.</p>
                   </div>
                 </div>
-                <div className="flex items-start gap-4">
+                <div className="flex items-start gap-4 p-6 rounded-lg bg-gradient-to-br from-card to-card/50">
                   <div className="bg-primary/10 text-primary p-3 rounded-full">
                     <Zap className="h-6 w-6" />
                   </div>
@@ -65,7 +65,7 @@ export default function HomePage() {
                     <p className="text-muted-foreground">We leverage cutting-edge technology and materials to push the boundaries of what's possible in modern architecture.</p>
                   </div>
                 </div>
-                <div className="flex items-start gap-4">
+                <div className="flex items-start gap-4 p-6 rounded-lg bg-gradient-to-br from-card to-card/50">
                   <div className="bg-primary/10 text-primary p-3 rounded-full">
                     <Gem className="h-6 w-6" />
                   </div>
