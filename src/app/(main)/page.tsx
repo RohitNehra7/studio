@@ -11,15 +11,15 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-black/60 z-10" />
         <Image
           src="https://storage.googleapis.com/maker-studio-5a503.appspot.com/user_managed/2c8c111c-2c93-4704-92d5-259703c734e5/image.png"
-          alt="The Archithan Architects company logo"
+          alt="Modern architectural building"
           layout="fill"
           objectFit="cover"
           className="z-0"
           priority
         />
-        <div className="relative z-20 container mx-auto px-4">
-          <div className="flex justify-center mb-8">
-            <Logo className="h-40 w-40" />
+        <div className="relative z-20 container mx-auto px-4 flex flex-col items-center">
+          <div className="w-40 h-40 mb-8">
+            <Logo className="w-full h-full" />
           </div>
           <h1 className="font-headline text-5xl md:text-7xl lg:text-8xl font-bold text-primary tracking-tight">
             The Archithan Architects
