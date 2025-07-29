@@ -10,7 +10,7 @@ export default function HomePage() {
       <section className="relative h-[80vh] min-h-[600px] flex items-center justify-center text-center text-white">
         <div className="absolute inset-0 bg-black/60 z-10" />
         <Image
-          src="https://placehold.co/1920x1080.png"
+          src="https://images.unsplash.com/photo-1542361325-11588f495147?q=80&w=2940&auto=format&fit=crop"
           alt="Modern architectural building"
           layout="fill"
           objectFit="cover"
@@ -43,41 +43,43 @@ export default function HomePage() {
 
       <section className="py-20 md:py-32 bg-background">
         <div className="container mx-auto px-4 max-w-7xl">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-16 items-center">
             <div className="order-2 md:order-1">
-              <h2 className="font-headline text-3xl md:text-4xl text-primary mb-6">Designing with Purpose</h2>
-              <div className="space-y-6">
-                <div className="flex items-start gap-4 p-6 rounded-lg bg-gradient-to-br from-card to-card/50">
-                  <div className="bg-primary/10 text-primary p-3 rounded-full">
-                    <Palette className="h-6 w-6" />
+              <h2 className="font-headline text-3xl md:text-4xl text-primary mb-8 text-center md:text-left">Our Approach to Excellence</h2>
+              <div className="space-y-8">
+                <div className="flex items-start gap-6">
+                  <div className="bg-primary/10 text-primary p-4 rounded-full">
+                    <Palette className="h-7 w-7" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-foreground mb-1">Aesthetic Elegance</h3>
-                    <p className="text-muted-foreground">Our approach blends timeless beauty with functional design, creating spaces that are both inspiring and livable.</p>
+                    <h3 className="text-xl font-semibold text-foreground mb-2">Aesthetic Elegance</h3>
+                    <p className="text-muted-foreground">Fusing timeless beauty with functional design to create inspiring and livable spaces.</p>
                   </div>
                 </div>
-                <div className="flex items-start gap-4 p-6 rounded-lg bg-gradient-to-br from-card to-card/50">
-                  <div className="bg-primary/10 text-primary p-3 rounded-full">
-                    <Zap className="h-6 w-6" />
+                <div className="flex items-start gap-6">
+                  <div className="bg-primary/10 text-primary p-4 rounded-full">
+                    <Zap className="h-7 w-7" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-foreground mb-1">Innovative Solutions</h3>
-                    <p className="text-muted-foreground">We leverage cutting-edge technology and materials to push the boundaries of what's possible in modern architecture.</p>
+                    <h3 className="text-xl font-semibold text-foreground mb-2">Innovative Solutions</h3>
+                    <p className="text-muted-foreground">Leveraging cutting-edge technology to redefine what's possible in modern architecture.</p>
                   </div>
                 </div>
-                <div className="flex items-start gap-4 p-6 rounded-lg bg-gradient-to-br from-card to-card/50">
-                  <div className="bg-primary/10 text-primary p-3 rounded-full">
-                    <Gem className="h-6 w-6" />
+                <div className="flex items-start gap-6">
+                  <div className="bg-primary/10 text-primary p-4 rounded-full">
+                    <Gem className="h-7 w-7" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-foreground mb-1">Uncompromising Quality</h3>
-                    <p className="text-muted-foreground">From initial concept to final construction, we are committed to the highest standards of craftsmanship and excellence.</p>
+                    <h3 className="text-xl font-semibold text-foreground mb-2">Uncompromising Quality</h3>
+                    <p className="text-muted-foreground">Committed to the highest standards of craftsmanship from concept to completion.</p>
                   </div>
                 </div>
               </div>
-              <Button variant="outline" className="mt-8" asChild>
-                <Link href="/about">Learn More About Us</Link>
-              </Button>
+              <div className="mt-12 text-center md:text-left">
+                <Button variant="outline" asChild>
+                  <Link href="/about">Learn More About Us</Link>
+                </Button>
+              </div>
             </div>
             <div className="order-1 md:order-2 rounded-lg overflow-hidden shadow-2xl group">
                  <Image
