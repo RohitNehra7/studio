@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Zap, Gem, Palette } from "lucide-react";
 import { Logo } from "@/components/layout/logo";
 
 export default function HomePage() {
@@ -45,14 +45,37 @@ export default function HomePage() {
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1">
-              <h2 className="font-headline text-3xl md:text-4xl text-primary mb-4">Designing with Purpose</h2>
-              <p className="text-muted-foreground mb-4">
-                At The Archithan Architects, we believe that great architecture is more than just buildings; it's about creating environments that enhance human experience. Our approach blends aesthetic elegance with functional design, ensuring every project is a testament to innovation and quality.
-              </p>
-              <p className="text-muted-foreground">
-                From soaring commercial towers to intimate residential spaces, our portfolio is a narrative of our commitment to excellence and our passion for pushing the boundaries of design.
-              </p>
-              <Button variant="outline" className="mt-6" asChild>
+              <h2 className="font-headline text-3xl md:text-4xl text-primary mb-6">Designing with Purpose</h2>
+              <div className="space-y-6">
+                <div className="flex items-start gap-4">
+                  <div className="bg-primary/10 text-primary p-3 rounded-full">
+                    <Palette className="h-6 w-6" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-foreground mb-1">Aesthetic Elegance</h3>
+                    <p className="text-muted-foreground">Our approach blends timeless beauty with functional design, creating spaces that are both inspiring and livable.</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="bg-primary/10 text-primary p-3 rounded-full">
+                    <Zap className="h-6 w-6" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-foreground mb-1">Innovative Solutions</h3>
+                    <p className="text-muted-foreground">We leverage cutting-edge technology and materials to push the boundaries of what's possible in modern architecture.</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="bg-primary/10 text-primary p-3 rounded-full">
+                    <Gem className="h-6 w-6" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-foreground mb-1">Uncompromising Quality</h3>
+                    <p className="text-muted-foreground">From initial concept to final construction, we are committed to the highest standards of craftsmanship and excellence.</p>
+                  </div>
+                </div>
+              </div>
+              <Button variant="outline" className="mt-8" asChild>
                 <Link href="/about">Learn More About Us</Link>
               </Button>
             </div>
