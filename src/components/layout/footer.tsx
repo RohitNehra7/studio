@@ -10,7 +10,6 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
           <div className="flex flex-col items-center md:items-start gap-4">
              <Link href="/" className="flex items-center gap-2" passHref>
-                <Logo className="h-8 w-8 text-primary" />
                 <span className="text-2xl font-bold text-primary font-headline">
                     The Archithan Architects
                 </span>

@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { Logo } from "@/components/layout/logo";
 
 export default function HomePage() {
   return (
@@ -13,10 +14,11 @@ export default function HomePage() {
           alt="Modern architectural building"
           layout="fill"
           objectFit="cover"
-          className="z-0"
+          className="z-0 opacity-20"
           data-ai-hint="modern architecture"
           priority
         />
+        <Logo className="absolute inset-0 w-full h-full text-primary/10 z-0" />
         <div className="relative z-20 container mx-auto px-4">
           <h1 className="font-headline text-5xl md:text-7xl lg:text-8xl font-bold text-primary tracking-tight">
             The Archithan Architects
