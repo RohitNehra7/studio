@@ -27,7 +27,7 @@
   }
 
   .dark {
-    --background: 240 10% 8%;
+    --background: 240 10% 3.9%;
     --foreground: 0 0% 98%;
     --card: 240 10% 3.9%;
     --card-foreground: 0 0% 98%;
@@ -56,5 +56,20 @@
   body {
     @apply bg-background text-foreground;
     @apply min-h-screen;
+  }
+}
+
+@layer utilities {
+  .animate-loader {
+    animation: loader-animation 1s ease-in-out forwards;
+  }
+
+  @keyframes loader-animation {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 100%;
+    }
   }
 }
