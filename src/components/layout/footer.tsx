@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Facebook, Twitter, Instagram, Linkedin, Building2 } from "lucide-react";
+import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
+import { Logo } from "./logo";
 
 export function Footer() {
   return (
@@ -9,9 +10,9 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
           <div className="flex flex-col items-center md:items-start gap-4">
              <Link href="/" className="flex items-center gap-2" passHref>
-                <Building2 className="h-8 w-8 text-primary" />
+                <Logo className="h-8 w-8 text-primary" />
                 <span className="text-2xl font-bold text-primary font-headline">
-                    Archithan Vision
+                    The Archithan Architects
                 </span>
             </Link>
             <p className="text-muted-foreground">
@@ -46,7 +47,7 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-12 pt-8 border-t border-border/40 text-center text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} Archithan Vision. All Rights Reserved.</p>
+          <p>&copy; {new Date().getFullYear()} The Archithan Architects. All Rights Reserved.</p>
         </div>
       </div>
     </footer>

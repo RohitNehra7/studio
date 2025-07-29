@@ -30,7 +30,7 @@ export default function ContactPage() {
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-foreground">Email Us</h3>
-                <p className="text-muted-foreground">contact@archithanvision.com</p>
+                <p className="text-muted-foreground">contact@thearchithanarchitects.com</p>
               </div>
             </div>
             <div className="flex items-start gap-4">

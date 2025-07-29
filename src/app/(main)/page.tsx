@@ -19,7 +19,7 @@ export default function HomePage() {
         />
         <div className="relative z-20 container mx-auto px-4">
           <h1 className="font-headline text-5xl md:text-7xl lg:text-8xl font-bold text-primary tracking-tight">
-            Archithan Vision
+            The Archithan Architects
           </h1>
           <p className="mt-4 text-xl md:text-2xl max-w-3xl mx-auto text-foreground/90">
             Crafting Tomorrow's Landmarks, Today.
@@ -43,7 +43,7 @@ export default function HomePage() {
             <div className="order-2 md:order-1">
               <h2 className="font-headline text-3xl md:text-4xl text-primary mb-4">Designing with Purpose</h2>
               <p className="text-muted-foreground mb-4">
-                At Archithan Vision, we believe that great architecture is more than just buildings; it's about creating environments that enhance human experience. Our approach blends aesthetic elegance with functional design, ensuring every project is a testament to innovation and quality.
+                At The Archithan Architects, we believe that great architecture is more than just buildings; it's about creating environments that enhance human experience. Our approach blends aesthetic elegance with functional design, ensuring every project is a testament to innovation and quality.
               </p>
               <p className="text-muted-foreground">
                 From soaring commercial towers to intimate residential spaces, our portfolio is a narrative of our commitment to excellence and our passion for pushing the boundaries of design.

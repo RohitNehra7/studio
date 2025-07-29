@@ -16,7 +16,7 @@ export default function AboutPage() {
             data-ai-hint="abstract architecture"
             />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
-          <h1 className="font-headline text-4xl md:text-6xl font-bold text-primary">About Archithan Vision</h1>
+          <h1 className="font-headline text-4xl md:text-6xl font-bold text-primary">About The Archithan Architects</h1>
           <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-foreground/90">
             We are a team of passionate architects and designers committed to creating spaces that enrich lives.
           </p>
@@ -29,7 +29,7 @@ export default function AboutPage() {
             <div>
               <h2 className="font-headline text-3xl md:text-4xl text-primary mb-4">Our Story</h2>
               <p className="text-muted-foreground mb-4">
-                Founded in 2010 by Aisha Shabeeh Shaheen, Archithan Vision was born from a desire to merge timeless architectural principles with contemporary design innovation. What began as a small studio has grown into a renowned firm, known for its iconic structures and unwavering commitment to quality.
+                Founded in 2010 by Aisha Shabeeh Shaheen, The Archithan Architects was born from a desire to merge timeless architectural principles with contemporary design innovation. What began as a small studio has grown into a renowned firm, known for its iconic structures and unwavering commitment to quality.
               </p>
               <p className="text-muted-foreground">
                 Our journey is marked by a portfolio of diverse projects, each telling a unique story of collaboration, creativity, and technical excellence. We pride ourselves on building lasting relationships with our clients, turning their visions into tangible, breathtaking realities.
@@ -113,7 +113,7 @@ export default function AboutPage() {
                 Aisha is an award-winning architect with over 20 years of experience in creating iconic and sustainable designs. Her work is celebrated for its poetic use of space, light, and material. She holds a Master's degree in Architecture from the prestigious International Design Institute and is a fellow of the Royal Architectural Society.
               </p>
               <p className="text-muted-foreground">
-                Her vision for Archithan Vision is to create a legacy of architecture that is not only visually stunning but also deeply connected to its environment and the people who inhabit it.
+                Her vision for The Archithan Architects is to create a legacy of architecture that is not only visually stunning but also deeply connected to its environment and the people who inhabit it.
               </p>
             </div>
           </div>

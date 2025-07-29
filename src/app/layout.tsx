@@ -3,7 +3,7 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'Archithan Vision',
+  title: 'The Archithan Architects',
   description: 'Elegance in Architecture. Vision in Design.',
 };
 
