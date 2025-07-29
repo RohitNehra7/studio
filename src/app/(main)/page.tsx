@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { Logo } from "@/components/layout/logo";
 
 export default function HomePage() {
   return (
@@ -10,13 +11,16 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-black/60 z-10" />
         <Image
           src="https://storage.googleapis.com/maker-studio-5a503.appspot.com/user_managed/e4f2be1d-845a-48d0-9a2c-982823616644/image.png"
-          alt="The Archithan Architects company logo"
+          alt="Modern architectural building"
           layout="fill"
           objectFit="cover"
           className="z-0"
           priority
         />
         <div className="relative z-20 container mx-auto px-4">
+          <div className="flex justify-center mb-8">
+            <Logo className="h-40 w-40" />
+          </div>
           <h1 className="font-headline text-5xl md:text-7xl lg:text-8xl font-bold text-primary tracking-tight">
             The Archithan Architects
           </h1>
