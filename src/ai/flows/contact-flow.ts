@@ -8,21 +8,7 @@
  */
 
 import { ai } from '@/ai/genkit';
-import { z } from 'genkit';
-
-const ContactRequestSchema = z.object({
-  name: z.string().describe('The name of the person sending the message.'),
-  email: z.string().email().describe('The email address of the sender.'),
-  subject: z.string().describe('The subject of the message.'),
-  message: z.string().describe('The content of the message.'),
-});
-export type ContactRequest = z.infer<typeof ContactRequestSchema>;
-
-const ContactResponseSchema = z.object({
-  message: z.string().describe('A confirmation message to be shown to the user.'),
-});
-export type ContactResponse = z.infer<typeof ContactResponseSchema>;
-
+import { ContactRequest, ContactRequestSchema, ContactResponse, ContactResponseSchema } from './contact.types';
 
 const prompt = ai.definePrompt({
   name: 'contactFormPrompt',
