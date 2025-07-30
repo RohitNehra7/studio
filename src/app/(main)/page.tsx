@@ -83,7 +83,7 @@ export default function HomePage() {
             </div>
             <div className="order-1 md:order-2 rounded-lg overflow-hidden shadow-2xl group">
                  <Image
-                    src="https://placehold.co/800x600.png"
+                    src="https://images.unsplash.com/photo-1523966211575-eb4a01e7dd51?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjb250YWN0fGVufDB8fHx8MTc1Mzg5MzkzM3ww&ixlib=rb-4.1.0&q=80&w=1080"
                     alt="Interior of a modern building"
                     width={800}
                     height={600}
