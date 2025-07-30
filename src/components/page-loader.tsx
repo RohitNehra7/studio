@@ -9,12 +9,13 @@ export function PageLoader() {
   const [key, setKey] = useState(0);
 
   useEffect(() => {
+    // A key state change is required to re-trigger the animation
+    setKey(prev => prev + 1); 
     setLoading(true);
-    setKey(prev => prev + 1); // Re-trigger animation
 
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 500); // Should match animation duration or be slightly longer
+    }, 500);
 
     return () => clearTimeout(timer);
   }, [pathname]);
