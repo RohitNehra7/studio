@@ -8,9 +8,11 @@ export default function HomePage() {
   return (
     <div className="animate-in fade-in duration-500">
       <HeroSection />
-      <ServicesSection />
-      <OurApproach />
-      <ContactCallToAction />
+      <div className="relative z-10 bg-background">
+        <ServicesSection />
+        <OurApproach />
+        <ContactCallToAction />
+      </div>
     </div>
   );
 }
