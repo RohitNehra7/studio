@@ -11,7 +11,7 @@ const blogPosts = [
     title: 'The Rise of Sustainable Architecture',
     date: 'October 26, 2023',
     excerpt: 'Exploring how eco-friendly materials and design are shaping the future of our cities and homes. We delve into the latest innovations and how they contribute to a greener planet.',
-    image: 'https://placehold.co/1200x600.png',
+    image: 'https://images.unsplash.com/photo-1466678914828-09436531519a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxncmVlbiUyMGJ1aWxkaW5nfGVufDB8fHx8MTc1NDU4MTM2N3ww&ixlib=rb-4.1.0&q=80&w=1080',
     hint: 'green building',
     tags: ['Sustainability', 'Innovation']
   },
@@ -20,7 +20,7 @@ const blogPosts = [
     title: 'Minimalism: The Art of Less in Design',
     date: 'October 15, 2023',
     excerpt: 'A deep dive into the principles of minimalism and how it creates serene and functional spaces.',
-    image: 'https://placehold.co/600x400.png',
+    image: 'https://images.unsplash.com/photo-1505691938895-1758d7FEB511?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtaW5pbWFsaXN0JTIwaW50ZXJpb3J8ZW58MHx8fHwxNzU0NTgxMzg0fDA&ixlib=rb-4.1.0&q=80&w=1080',
     hint: 'minimalist interior',
     tags: ['Design', 'Philosophy']
   },
@@ -29,7 +29,7 @@ const blogPosts = [
     title: 'Integrating Smart Technology in Modern Homes',
     date: 'September 30, 2023',
     excerpt: 'From automated lighting to intelligent climate control, see how tech is revolutionizing residential architecture.',
-    image: 'https://placehold.co/600x400.png',
+    image: 'https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzbWFydCUyMGhvbWV8ZW58MHx8fHwxNzU0NTgxMzk1fDA&ixlib=rb-4.1.0&q=80&w=1080',
     hint: 'smart home',
     tags: ['Technology', 'Residential']
   },
@@ -38,7 +38,7 @@ const blogPosts = [
     title: 'The Timeless Allure of Brutalism',
     date: 'September 12, 2023',
     excerpt: 'Rediscovering the raw beauty and powerful forms of brutalist architecture in the 21st century.',
-    image: 'https://placehold.co/600x400.png',
+    image: 'https://images.unsplash.com/photo-1599905292461-6aa8767355ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxicnV0YWxpc3QlMjBidWlsZGluZ3xlbnwwfHx8fDE3NTQ1ODE0MDZ8MA&ixlib=rb-4.1.0&q=80&w=1080',
     hint: 'brutalist building',
     tags: ['History', 'Design']
   },
@@ -47,7 +47,7 @@ const blogPosts = [
     title: 'Biophilic Design: Connecting with Nature',
     date: 'August 28, 2023',
     excerpt: 'How incorporating natural elements into our buildings can improve well-being and productivity.',
-    image: 'https://placehold.co/600x400.png',
+    image: 'https://images.unsplash.com/photo-1558985250-2d88b4d84c34?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpbmRvb3IlMjBwbGFudHN8ZW58MHx8fHwxNzU0NTgxNDE3fDA&ixlib=rb-4.1.0&q=80&w=1080',
     hint: 'indoor plants',
     tags: ['Wellness', 'Sustainability']
   },
@@ -56,7 +56,7 @@ const blogPosts = [
     title: 'The Future of Urban Planning',
     date: 'August 05, 2023',
     excerpt: 'What will our cities look like in 2050? We explore the trends shaping urban landscapes.',
-    image: 'https://placehold.co/600x400.png',
+    image: 'https://images.unsplash.com/photo-1545431681-86a7479a8f22?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmdXR1cmUlMjBjaXR5fGVufDB8fHx8MTc1NDU4MTQyNnww&ixlib=rb-4.1.0&q=80&w=1080',
     hint: 'future city',
     tags: ['Urbanism', 'Innovation']
   },
