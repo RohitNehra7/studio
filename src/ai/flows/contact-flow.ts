@@ -10,7 +10,7 @@
 import { ai } from '@/ai/genkit';
 import { z } from 'genkit';
 
-export const ContactRequestSchema = z.object({
+const ContactRequestSchema = z.object({
   name: z.string().describe('The name of the person sending the message.'),
   email: z.string().email().describe('The email address of the sender.'),
   subject: z.string().describe('The subject of the message.'),
@@ -18,7 +18,7 @@ export const ContactRequestSchema = z.object({
 });
 export type ContactRequest = z.infer<typeof ContactRequestSchema>;
 
-export const ContactResponseSchema = z.object({
+const ContactResponseSchema = z.object({
   message: z.string().describe('A confirmation message to be shown to the user.'),
 });
 export type ContactResponse = z.infer<typeof ContactResponseSchema>;
