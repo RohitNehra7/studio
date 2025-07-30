@@ -7,6 +7,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from '@/components/ui/carousel';
+import Autoplay from "embla-carousel-autoplay";
 
 const projects = [
   { 
@@ -144,7 +145,19 @@ export default function ProjectsPage() {
           {filteredProjects.map((project) => (
               <Card key={project.id} className="group/card bg-card/60 backdrop-blur-sm overflow-hidden border-border/20 flex flex-col transition-all duration-300 ease-in-out group-hover/grid:[&:not(:hover)]:opacity-50 group-hover/grid:[&:not(:hover)]:scale-95 hover:!opacity-100 hover:!scale-105 hover:border-primary">
                   <CardHeader className="p-0 relative">
-                    <Carousel className="w-full">
+                    <Carousel 
+                      className="w-full"
+                      plugins={[
+                        Autoplay({
+                          delay: 2000,
+                          stopOnInteraction: true,
+                          stopOnHover: true,
+                        }),
+                      ]}
+                      opts={{
+                        loop: true,
+                      }}
+                    >
                       <CarouselContent>
                         {project.images.map((image, index) => (
                           <CarouselItem key={index}>
