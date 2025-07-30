@@ -9,10 +9,8 @@ export function Footer() {
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
           <div className="flex flex-col items-center md:items-start gap-4">
-             <Link href="/" className="flex items-center gap-2" passHref>
-                <span className="text-2xl font-bold text-foreground font-headline">
-                    The Archithan Architects
-                </span>
+             <Link href="/" passHref>
+                <Logo />
             </Link>
             <p className="text-muted-foreground">
               Elegance in Architecture. Vision in Design.

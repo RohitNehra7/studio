@@ -8,6 +8,7 @@ import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/s
 import { Menu } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { ThemeToggle } from "@/components/theme-toggle";
+import { Logo } from "./logo";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -68,13 +69,11 @@ export function Header() {
       !hasScrolled && isHomePage ? "bg-transparent" : "border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60"
     )}>
       <div className="container mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <Link href="/" className="flex items-center gap-2" passHref>
-          <span className={cn(
-            "text-2xl font-bold font-headline transition-colors",
+        <Link href="/" passHref>
+          <Logo className={cn(
+            "transition-colors",
              !hasScrolled && isHomePage ? "text-white" : "text-foreground"
-          )}>
-            The Archithan Architects
-          </span>
+          )} />
         </Link>
         <nav className="hidden md:flex items-center gap-2">
           {navLinks.map((link) => (
