@@ -68,14 +68,15 @@ const otherPosts = blogPosts.slice(1);
 
 export default function BlogPage() {
   return (
-    <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 animate-in fade-in duration-500">
-      <header className="text-center mb-12 md:mb-16">
+    <div className="animate-in fade-in duration-500">
+      <header className="text-center py-16 md:py-24 bg-gradient-to-b from-card to-background">
         <h1 className="font-headline text-4xl md:text-5xl font-bold text-primary">Architectural Insights</h1>
         <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
           Our thoughts on design, innovation, and the future of architecture.
         </p>
       </header>
       
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
       {/* Featured Post */}
       <Card className="mb-16 grid md:grid-cols-2 overflow-hidden group transition-all duration-300 hover:shadow-2xl hover:border-primary">
         <div className="overflow-hidden">
@@ -149,6 +150,7 @@ export default function BlogPage() {
           </Card>
         ))}
       </div>
+    </div>
     </div>
   );
 }

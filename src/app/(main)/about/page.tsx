@@ -6,7 +6,7 @@ export default function AboutPage() {
   return (
     <div className="animate-in fade-in duration-500">
       <header className="relative py-24 md:py-40 text-center text-white bg-card">
-         <div className="absolute inset-0 bg-black/30 z-10" />
+         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-background/20 z-10" />
           <Image
             src="https://images.unsplash.com/photo-1542361325-11588f495147?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMGFyY2hpdGVjdHVyZXxlbnwwfHx8fDE3NTQ1ODMxNzB8MA&ixlib=rb-4.1.0&q=80&w=1080"
             alt="Abstract architectural lines"

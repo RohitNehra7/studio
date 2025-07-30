@@ -17,7 +17,7 @@ export function HeroSection() {
                 data-ai-hint="architecture building"
                 priority
             />
-            <div className="absolute inset-0 bg-black/50 z-10" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent z-10" />
             <div className="relative z-20 container mx-auto px-4 flex flex-col items-center">
                 <h1 className="font-headline text-5xl md:text-7xl lg:text-8xl font-bold text-white tracking-tight">
                     The Archithan Architects

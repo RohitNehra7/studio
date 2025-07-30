@@ -5,7 +5,7 @@ import { Zap, Gem, Palette } from "lucide-react";
 
 export function OurApproach() {
     return (
-        <section className="py-20 md:py-32 bg-background">
+        <section className="py-20 md:py-32 bg-gradient-to-b from-background to-card">
             <div className="container mx-auto px-4 max-w-7xl">
             <div className="grid md:grid-cols-2 gap-16 items-center">
                 <div className="order-2 md:order-1">
