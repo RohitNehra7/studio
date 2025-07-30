@@ -47,7 +47,7 @@ export function OurApproach() {
                 </div>
                 <div className="order-1 md:order-2 rounded-lg overflow-hidden shadow-2xl group">
                     <Image
-                        src="https://images.unsplash.com/photo-1692129970987-da3aba03eeb7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhcHByb2FjaHxlbnwwfHx8fDE3NTM4OTk5NTV8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                        src="https://images.unsplash.com/photo-1449157291145-7efd050a4d0e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxhcmNoaXRlY3R1cmV8ZW58MHx8fHwxNzUzODk0MTc2fDA&ixlib=rb-4.1.0&q=80&w=1080"
                         alt="Interior of a modern building"
                         width={800}
                         height={600}
