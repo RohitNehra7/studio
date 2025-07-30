@@ -19,17 +19,17 @@ export function HeroSection() {
             />
             <div className="absolute inset-0 bg-black/50 z-10" />
             <div className="relative z-20 container mx-auto px-4 flex flex-col items-center">
-                <h1 className="font-headline text-5xl md:text-7xl lg:text-8xl font-bold text-primary tracking-tight">
+                <h1 className="font-headline text-5xl md:text-7xl lg:text-8xl font-bold text-white tracking-tight">
                     The Archithan Architects
                 </h1>
-                <p className="mt-4 text-xl md:text-2xl max-w-3xl mx-auto text-foreground/90">
+                <p className="mt-4 text-xl md:text-2xl max-w-3xl mx-auto text-white/90">
                     Crafting Tomorrow's Landmarks, Today.
                 </p>
-                <p className="mt-6 text-lg max-w-2xl mx-auto text-foreground/80">
+                <p className="mt-6 text-lg max-w-2xl mx-auto text-white/80">
                     Founded by visionary architect Aisha Shabeeh Shaheen, we are dedicated to designing spaces that inspire and endure.
                 </p>
                 <div className="mt-10">
-                    <Button size="lg" asChild className="bg-primary hover:bg-primary/90 text-primary-foreground">
+                    <Button size="lg" asChild className="bg-white hover:bg-white/90 text-slate-900">
                         <Link href="/projects">
                             Explore Our Projects <ArrowRight className="ml-2 h-5 w-5" />
                         </Link>
