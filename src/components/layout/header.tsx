@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
@@ -20,6 +20,26 @@ const navLinks = [
 export function Header() {
   const pathname = usePathname();
   const [isSheetOpen, setSheetOpen] = useState(false);
+  const [hasScrolled, setHasScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setHasScrolled(window.scrollY > 20);
+    };
+
+    if (pathname === '/') {
+      window.addEventListener("scroll", handleScroll);
+      handleScroll();
+    } else {
+      setHasScrolled(true);
+    }
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [pathname]);
+
+  const isHomePage = pathname === "/";
 
   const NavLink = ({ href, label, className }: { href: string; label: string; className?: string }) => {
     const isActive = pathname === href;
@@ -28,8 +48,9 @@ export function Header() {
         <Button
           variant="link"
           className={cn(
-            "text-lg text-foreground/80 hover:text-primary hover:no-underline transition-colors duration-300",
-            isActive && "text-primary font-semibold",
+            "text-lg hover:text-primary hover:no-underline transition-colors duration-300",
+            isHomePage && !hasScrolled ? "text-white/80 hover:text-white" : "text-foreground/80",
+            isActive && (isHomePage && !hasScrolled ? "text-white font-semibold" : "text-primary font-semibold"),
             className
           )}
           onClick={() => setSheetOpen(false)}
@@ -41,10 +62,16 @@ export function Header() {
   };
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className={cn(
+      "fixed top-0 z-50 w-full transition-all duration-300 ease-in-out",
+      !hasScrolled && isHomePage ? "bg-transparent" : "border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60"
+    )}>
       <div className="container mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center gap-2" passHref>
-          <span className="text-2xl font-bold text-foreground font-headline">
+          <span className={cn(
+            "text-2xl font-bold font-headline transition-colors",
+             !hasScrolled && isHomePage ? "text-white" : "text-foreground"
+          )}>
             The Archithan Architects
           </span>
         </Link>
@@ -54,12 +81,14 @@ export function Header() {
           ))}
         </nav>
         <div className="flex items-center gap-4">
-            <ThemeToggle />
+             <div className={cn(!hasScrolled && isHomePage ? "[&_#theme-toggle~*]:text-white" : "")}>
+              <ThemeToggle />
+            </div>
             <div className="md:hidden">
             <Sheet open={isSheetOpen} onOpenChange={setSheetOpen}>
                 <SheetTrigger asChild>
                 <Button variant="ghost" size="icon">
-                    <Menu className="h-6 w-6 text-foreground" />
+                    <Menu className={cn("h-6 w-6", !hasScrolled && isHomePage ? "text-white" : "text-foreground")} />
                     <span className="sr-only">Open menu</span>
                 </Button>
                 </SheetTrigger>
@@ -68,7 +97,7 @@ export function Header() {
                 <div className="flex flex-col items-center justify-center h-full">
                     <nav className="flex flex-col items-center gap-6">
                     {navLinks.map((link) => (
-                        <NavLink key={link.href} {...link} className="text-2xl"/>
+                        <NavLink key={link.href} {...link} className={cn("text-2xl", "!text-foreground/80", pathname === link.href && "!text-primary")}/>
                     ))}
                     </nav>
                 </div>
