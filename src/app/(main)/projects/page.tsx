@@ -46,7 +46,7 @@ export default function ProjectsPage({
             key={category}
             variant={filter === category ? 'default' : 'outline'}
             onClick={() => setFilter(category)}
-            className={`transition-all duration-300 ${filter === category ? 'bg-primary text-primary-foreground' : 'border-accent text-accent-foreground hover:bg-accent/20'}`}
+            className={`transition-all duration-300 ${filter === category ? 'bg-primary text-primary-foreground dark:text-primary-foreground' : 'border-accent text-accent-foreground hover:bg-accent/20'}`}
           >
             {category}
           </Button>
@@ -90,3 +90,4 @@ export default function ProjectsPage({
     </div>
   );
 }
+
