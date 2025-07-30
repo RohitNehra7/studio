@@ -7,13 +7,13 @@ import { ArrowRight } from "lucide-react";
 
 export function HeroSection() {
     return (
-        <section className="relative h-[80vh] min-h-[600px] flex items-center justify-center text-center text-white overflow-hidden">
+        <section className="relative h-[80vh] min-h-[600px] flex items-center justify-center text-center text-white overflow-hidden group">
             <Image
                 src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxhcmNoaXRlY3R1cmV8ZW58MHx8fHwxNzUzODk0MTc2fDA&ixlib=rb-4.1.0&q=80&w=1080"
                 alt="Modern architectural building"
                 fill
                 style={{objectFit: 'cover'}}
-                className="z-0"
+                className="z-0 transition-transform duration-1000 ease-in-out group-hover:scale-105"
                 data-ai-hint="architecture building"
                 priority
             />
