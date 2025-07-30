@@ -1,12 +1,13 @@
 
 "use client";
 
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
+import Autoplay from "embla-carousel-autoplay"
 
 const projects = [
   { id: 1, title: 'Serenity House', category: 'Residential', image: 'https://placehold.co/800x600.png', hint: 'modern house', description: 'A masterpiece of modern residential design, this home balances sharp lines with natural materials to create a peaceful and welcoming environment.' },
@@ -28,6 +29,9 @@ export default function ProjectsPage({
   searchParams: { [key: string]: string | string[] | undefined };
 }) {
   const [filter, setFilter] = useState('All');
+  const plugin = useRef(
+    Autoplay({ delay: 2000, stopOnInteraction: false, stopOnMouseEnter: true })
+  );
 
   const filteredProjects = filter === 'All' ? projects : projects.filter(p => p.category === filter);
 
@@ -54,8 +58,10 @@ export default function ProjectsPage({
       </div>
       
       <Carousel
+        plugins={[plugin.current]}
         opts={{
           align: "start",
+          loop: true,
         }}
         className="w-full"
       >
