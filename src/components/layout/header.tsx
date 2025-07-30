@@ -12,6 +12,7 @@ import { ThemeToggle } from "@/components/theme-toggle";
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/projects", label: "Projects" },
+  { href: "/blog", label: "Blog" },
   { href: "/about", label: "About Us" },
   { href: "/contact", label: "Contact" },
 ];
@@ -52,7 +53,7 @@ export function Header() {
             <NavLink key={link.href} {...link} />
           ))}
         </nav>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-4">
             <ThemeToggle />
             <div className="md:hidden">
             <Sheet open={isSheetOpen} onOpenChange={setSheetOpen}>
