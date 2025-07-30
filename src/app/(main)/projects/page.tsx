@@ -4,13 +4,11 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { ArrowRight } from 'lucide-react';
-import { ProjectModal } from '@/components/project-modal';
-import type { Project } from '@/components/project-modal';
+import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from '@/components/ui/carousel';
 
-const projects: Project[] = [
+const projects = [
   { 
     id: 1, 
     title: 'Serenity House', 
@@ -101,17 +99,10 @@ const projects: Project[] = [
   },
 ];
 
-
 const categories = ['All', 'Residential', 'Commercial', 'Institutional'];
 
-export default function ProjectsPage({
-  searchParams,
-}: {
-  searchParams: { [key: string]: string | string[] | undefined };
-}) {
+export default function ProjectsPage() {
   const [filter, setFilter] = useState('All');
-  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
-  
   const filteredProjects = filter === 'All' ? projects : projects.filter(p => p.category === filter);
 
   return (
@@ -141,49 +132,41 @@ export default function ProjectsPage({
           ))}
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 group/showcase">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredProjects.map((project) => (
-              <Card key={project.id} className="group/item bg-card/60 backdrop-blur-sm overflow-hidden border border-transparent hover:!border-primary/50 transition-all duration-300 hover:scale-105 group-hover/showcase:hover:!opacity-100 group-hover/showcase:opacity-50">
+              <Card key={project.id} className="group bg-card/60 backdrop-blur-sm overflow-hidden border-border/20 flex flex-col">
                   <CardHeader className="p-0 relative">
-                  <div className="overflow-hidden aspect-[4/3]">
-                      <Image
-                      src={project.images[0].src}
-                      alt={project.title}
-                      width={800}
-                      height={600}
-                      className="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover/item:scale-110"
-                      data-ai-hint={project.images[0].hint}
-                      />
-                  </div>
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"/>
+                    <Carousel className="w-full">
+                      <CarouselContent>
+                        {project.images.map((image, index) => (
+                          <CarouselItem key={index}>
+                            <div className="aspect-[4/3] relative">
+                              <Image
+                                src={image.src}
+                                alt={`${project.title} - Image ${index + 1}`}
+                                fill
+                                className="object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
+                                data-ai-hint={image.hint}
+                              />
+                            </div>
+                          </CarouselItem>
+                        ))}
+                      </CarouselContent>
+                      <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-black/30 text-white border-none hover:bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity" />
+                      <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-black/30 text-white border-none hover:bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity" />
+                    </Carousel>
                   </CardHeader>
-                  <CardContent className="p-6">
-                      <div className="flex justify-between items-start">
-                          <div>
-                              <CardTitle className="font-headline text-2xl text-primary mb-2">{project.title}</CardTitle>
-                              <Badge variant="secondary" className="bg-accent/20 text-accent-foreground">{project.category}</Badge>
-                          </div>
+                  <CardContent className="p-6 flex-grow flex flex-col">
+                      <div className="flex-grow">
+                          <Badge variant="secondary" className="bg-accent/20 text-accent-foreground mb-2">{project.category}</Badge>
+                          <CardTitle className="font-headline text-2xl text-primary mb-2">{project.title}</CardTitle>
+                          <CardDescription className="line-clamp-3">{project.description}</CardDescription>
                       </div>
-                       <CardDescription className="mt-4 line-clamp-2">{project.description}</CardDescription>
                   </CardContent>
-                  <CardFooter className="p-6 pt-0">
-                      <Button variant="outline" className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground" onClick={() => setSelectedProject(project)}>
-                          View Project
-                          <ArrowRight className="ml-2 h-4 w-4" />
-                      </Button>
-                  </CardFooter>
               </Card>
           ))}
         </div>
       </div>
-      {selectedProject && (
-        <ProjectModal 
-          project={selectedProject}
-          onClose={() => setSelectedProject(null)}
-        />
-      )}
     </>
   );
 }
-
-    
