@@ -9,11 +9,11 @@ import Autoplay from "embla-carousel-autoplay";
 import { useRef } from "react";
 
 const heroImages = [
-  { src: "https://images.unsplash.com/photo-1542361325-11588f495147?q=80&w=2940&auto=format&fit=crop", alt: "Modern architectural building", hint: "architecture building" },
-  { src: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?q=80&w=2940&auto=format&fit=crop", alt: "Modern house interior", hint: "modern interior" },
-  { src: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2940&auto=format&fit=crop", alt: "Luxury villa with pool", hint: "luxury house" },
-  { src: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2940&auto=format&fit=crop", alt: "Stylish living room", hint: "stylish interior" },
-  { src: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?q=80&w=2940&auto=format&fit=crop", alt: "Modern office space", hint: "office space" },
+  { src: "https://images.unsplash.com/photo-1663940019982-c14294717dbd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhcmNoaXRlY3R1cmUlMjBidWlsZGluZ3xlbnwwfHx8fDE3NTM4OTU3MDl8MA&ixlib=rb-4.1.0&q=80&w=1080", alt: "Modern architectural building", hint: "architecture building" },
+  { src: "https://images.unsplash.com/photo-1646987916641-1f3c8992daa2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxtb2Rlcm4lMjBpbnRlcmlvcnxlbnwwfHx8fDE3NTM4OTU3MDl8MA&ixlib=rb-4.1.0&q=80&w=1080", alt: "Modern house interior", hint: "modern interior" },
+  { src: "https://images.unsplash.com/photo-1544984243-ec57ea16fe25?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxsdXh1cnklMjBob3VzZXxlbnwwfHx8fDE3NTM4OTU3MDl8MA&ixlib=rb-4.1.0&q=80&w=1080", alt: "Luxury villa with pool", hint: "luxury house" },
+  { src: "https://images.unsplash.com/photo-1512414769075-82d2c45d4be5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzdHlsaXNoJTIwaW50ZXJpb3J8ZW58MHx8fHwxNzUzODk1NzA5fDA&ixlib=rb-4.1.0&q=80&w=1080", alt: "Stylish living room", hint: "stylish interior" },
+  { src: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxvZmZpY2UlMjBzcGFjZXxlbnwwfHx8fDE3NTM4OTU3MDl8MA&ixlib=rb-4.1.0&q=80&w=1080", alt: "Modern office space", hint: "office space" },
 ];
 
 export default function HomePage() {
@@ -110,7 +110,7 @@ export default function HomePage() {
             </div>
             <div className="order-1 md:order-2 rounded-lg overflow-hidden shadow-2xl group">
                  <Image
-                    src="https://images.unsplash.com/photo-1451976426598-a7593bd6d0b2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxM3x8YXJjaGl0ZWN0dXJlfGVufDB8fHx8MTc1Mzg5NDE3Nnww&ixlib=rb-4.1.0&q=80&w=1080"
+                    src="https://images.unsplash.com/photo-1646987916641-1f3c8992daa2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxtb2Rlcm4lMjBpbnRlcmlvcnxlbnwwfHx8fDE3NTM4OTU3MDl8MA&ixlib=rb-4.1.0&q=80&w=1080"
                     alt="Interior of a modern building"
                     width={800}
                     height={600}
@@ -160,5 +160,3 @@ export default function HomePage() {
       </section>
     </div>
   );
-}
-    
