@@ -58,7 +58,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
             <Card className="text-center bg-background/50">
               <CardHeader>
-                <div className="mx-auto bg-accent/20 text-accent p-3 rounded-full w-fit">
+                <div className="mx-auto bg-primary/10 text-primary p-3 rounded-full w-fit">
                     <Award className="h-8 w-8"/>
                 </div>
                 <CardTitle className="font-headline text-2xl pt-4">Design Excellence</CardTitle>
