@@ -1,12 +1,14 @@
 
 "use client";
 
+import * as React from 'react';
 import Image from 'next/image';
-import { X, ArrowLeft, ArrowRight, Github, ExternalLink } from 'lucide-react';
+import { X, Github, ExternalLink } from 'lucide-react';
 import { Dialog, DialogContent, DialogTitle } from '@/components/ui/dialog';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from '@/components/ui/carousel';
+import Autoplay from "embla-carousel-autoplay";
 
 export interface Project {
   id: number;
@@ -24,13 +26,22 @@ interface ProjectModalProps {
 }
 
 export function ProjectModal({ project, onClose }: ProjectModalProps) {
+  const plugin = React.useRef(
+    Autoplay({ delay: 2000, stopOnInteraction: true })
+  );
+
   return (
     <Dialog open={true} onOpenChange={onClose}>
       <DialogContent className="max-w-4xl w-full p-0 bg-card/80 dark:bg-[#131729]/80 backdrop-blur-sm border-border/20 !rounded-2xl">
         <DialogTitle className="sr-only">{project.title}</DialogTitle>
         <div className="grid grid-cols-1 md:grid-cols-2 max-h-[90vh]">
           <div className="relative md:order-2">
-            <Carousel className="w-full h-full">
+            <Carousel 
+              className="w-full h-full"
+              plugins={[plugin.current]}
+              onMouseEnter={plugin.current.stop}
+              onMouseLeave={plugin.current.reset}
+            >
               <CarouselContent>
                 {project.images.map((image, index) => (
                   <CarouselItem key={index}>
