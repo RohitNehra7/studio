@@ -47,12 +47,12 @@ export function OurApproach() {
                 </div>
                 <div className="order-1 md:order-2 rounded-lg overflow-hidden shadow-2xl group">
                     <Image
-                        src="https://images.unsplash.com/photo-1646987916641-1f3c8992daa2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxtb2Rlcm4lMjBpbnRlcmlvcnxlbnwwfHx8fDE3NTM4OTU3MDl8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                        src="https://images.unsplash.com/photo-1606310967084-6f1b21596945?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhcHByb2FjaHxlbnwwfHx8fDE3NTM4OTk5NTV8MA&ixlib=rb-4.1.0&q=80&w=1080"
                         alt="Interior of a modern building"
                         width={800}
                         height={600}
                         className="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
-                        data-ai-hint="modern interior"
+                        data-ai-hint="approach"
                     />
                 </div>
             </div>
