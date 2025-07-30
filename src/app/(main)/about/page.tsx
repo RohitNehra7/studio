@@ -58,7 +58,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
             <Card className="text-center bg-background/50">
               <CardHeader>
-                <div className="mx-auto bg-primary/20 text-primary p-3 rounded-full w-fit">
+                <div className="mx-auto bg-accent/20 text-accent p-3 rounded-full w-fit">
                     <Award className="h-8 w-8"/>
                 </div>
                 <CardTitle className="font-headline text-2xl pt-4">Design Excellence</CardTitle>
@@ -69,7 +69,7 @@ export default function AboutPage() {
             </Card>
              <Card className="text-center bg-background/50">
               <CardHeader>
-                <div className="mx-auto bg-primary/20 text-primary p-3 rounded-full w-fit">
+                <div className="mx-auto bg-accent/20 text-accent p-3 rounded-full w-fit">
                     <Heart className="h-8 w-8"/>
                 </div>
                 <CardTitle className="font-headline text-2xl pt-4">Client-Centric Approach</CardTitle>
@@ -80,7 +80,7 @@ export default function AboutPage() {
             </Card>
              <Card className="text-center bg-background/50">
               <CardHeader>
-                <div className="mx-auto bg-primary/20 text-primary p-3 rounded-full w-fit">
+                <div className="mx-auto bg-accent/20 text-accent p-3 rounded-full w-fit">
                     <Leaf className="h-8 w-8"/>
                 </div>
                 <CardTitle className="font-headline text-2xl pt-4">Sustainability</CardTitle>
@@ -91,7 +91,7 @@ export default function AboutPage() {
             </Card>
             <Card className="text-center bg-background/50 md:col-start-1 lg:col-start-auto">
               <CardHeader>
-                <div className="mx-auto bg-primary/20 text-primary p-3 rounded-full w-fit">
+                <div className="mx-auto bg-accent/20 text-accent p-3 rounded-full w-fit">
                     <Star className="h-8 w-8"/>
                 </div>
                 <CardTitle className="font-headline text-2xl pt-4">Integrity & Transparency</CardTitle>
@@ -102,7 +102,7 @@ export default function AboutPage() {
             </Card>
             <Card className="text-center bg-background/50">
               <CardHeader>
-                <div className="mx-auto bg-primary/20 text-primary p-3 rounded-full w-fit">
+                <div className="mx-auto bg-accent/20 text-accent p-3 rounded-full w-fit">
                     <Rocket className="h-8 w-8"/>
                 </div>
                 <CardTitle className="font-headline text-2xl pt-4">Innovation & Adaptability</CardTitle>
