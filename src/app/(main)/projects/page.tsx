@@ -22,11 +22,9 @@ const projects = [
 const categories = ['All', 'Residential', 'Commercial', 'Institutional'];
 
 export default function ProjectsPage({
-  params,
   searchParams,
 }: {
-  params: {};
-  searchParams: {};
+  searchParams: { [key: string]: string | string[] | undefined };
 }) {
   const [filter, setFilter] = useState('All');
 
