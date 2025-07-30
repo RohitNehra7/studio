@@ -23,7 +23,7 @@ export default function HomePage() {
   
   return (
     <div className="animate-in fade-in duration-500">
-      <section className="relative h-[80vh] min-h-[600px] flex items-center justify-center text-center text-white">
+      <section className="relative h-[80vh] min-h-[600px] flex items-center justify-center text-center text-white overflow-hidden">
          <Carousel
           plugins={[plugin.current]}
           className="absolute inset-0 w-full h-full"
@@ -37,8 +37,8 @@ export default function HomePage() {
                 <Image
                   src={image.src}
                   alt={image.alt}
-                  layout="fill"
-                  objectFit="cover"
+                  fill
+                  style={{objectFit: 'cover'}}
                   className="z-0"
                   data-ai-hint={image.hint}
                   priority={index === 0}
@@ -160,3 +160,4 @@ export default function HomePage() {
       </section>
     </div>
   );
+}
