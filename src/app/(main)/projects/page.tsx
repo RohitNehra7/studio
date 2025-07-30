@@ -21,7 +21,13 @@ const projects = [
 
 const categories = ['All', 'Residential', 'Commercial', 'Institutional'];
 
-export default function ProjectsPage() {
+export default function ProjectsPage({
+  params,
+  searchParams,
+}: {
+  params: {};
+  searchParams: {};
+}) {
   const [filter, setFilter] = useState('All');
 
   const filteredProjects = filter === 'All' ? projects : projects.filter(p => p.category === filter);
