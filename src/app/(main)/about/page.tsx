@@ -8,7 +8,7 @@ export default function AboutPage() {
       <header className="relative py-24 md:py-40 text-center text-white bg-card">
          <div className="absolute inset-0 bg-black/30 z-10" />
           <Image
-            src="https://placehold.co/1600x400.png"
+            src="https://images.unsplash.com/photo-1542361325-11588f495147?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMGFyY2hpdGVjdHVyZXxlbnwwfHx8fDE3NTQ1ODMxNzB8MA&ixlib=rb-4.1.0&q=80&w=1080"
             alt="Abstract architectural lines"
             layout="fill"
             objectFit="cover"
@@ -37,7 +37,7 @@ export default function AboutPage() {
             </div>
             <div className="rounded-lg overflow-hidden shadow-lg">
                 <Image
-                    src="https://placehold.co/800x600.png"
+                    src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0ZWFtJTIwbWVldGluZ3xlbnwwfHx8fDE3NTQ1ODMxODJ8MA&ixlib=rb-4.1.0&q=80&w=1080"
                     alt="Architectural team collaboration"
                     width={800}
                     height={600}
@@ -98,7 +98,7 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-3 gap-12 items-center">
             <div className="md:col-span-1 rounded-full overflow-hidden w-64 h-64 md:w-80 md:h-80 mx-auto shadow-2xl border-4 border-primary">
               <Image
-                src="https://placehold.co/400x400.png"
+                src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjB3b21hbnxlbnwwfHx8fDE3NTQ1ODMxOTJ8MA&ixlib=rb-4.1.0&q=80&w=1080"
                 alt="Aisha Shabeeh Shaheen"
                 width={400}
                 height={400}
