@@ -41,7 +41,9 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-foreground">Call Us</h3>
-                  <p className="text-muted-foreground">(123) 456-7890</p>
+                  <a href="tel:+918168357643" className="text-muted-foreground hover:text-primary transition-colors">
+                    +91-8168357643
+                  </a>
                 </div>
               </div>
             </div>
