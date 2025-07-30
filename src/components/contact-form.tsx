@@ -3,6 +3,7 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
+import React from "react";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -16,28 +17,16 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
-import { Send } from "lucide-react";
+import { Send, Loader2 } from "lucide-react";
+import { processContactRequest, ContactRequestSchema } from "@/ai/flows/contact-flow";
 
-const formSchema = z.object({
-  name: z.string().min(2, {
-    message: "Name must be at least 2 characters.",
-  }),
-  email: z.string().email({
-    message: "Please enter a valid email address.",
-  }),
-  subject: z.string().min(5, {
-    message: "Subject must be at least 5 characters.",
-  }),
-  message: z.string().min(10, {
-    message: "Message must be at least 10 characters.",
-  }),
-});
 
 export function ContactForm() {
   const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = React.useState(false);
 
-  const form = useForm<z.infer<typeof formSchema>>({
-    resolver: zodResolver(formSchema),
+  const form = useForm<z.infer<typeof ContactRequestSchema>>({
+    resolver: zodResolver(ContactRequestSchema),
     defaultValues: {
       name: "",
       email: "",
@@ -46,13 +35,25 @@ export function ContactForm() {
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
-    toast({
-      title: "Message Sent!",
-      description: "Thank you for contacting us. We will get back to you shortly.",
-    });
-    form.reset();
+  async function onSubmit(values: z.infer<typeof ContactRequestSchema>) {
+    setIsSubmitting(true);
+    try {
+      const response = await processContactRequest(values);
+      toast({
+        title: "Message Sent!",
+        description: response.message,
+      });
+      form.reset();
+    } catch (error) {
+       toast({
+        title: "Error",
+        description: "There was an error sending your message. Please try again later.",
+        variant: "destructive",
+      });
+      console.error("Error processing contact request:", error);
+    } finally {
+      setIsSubmitting(false);
+    }
   }
 
   return (
@@ -114,8 +115,17 @@ export function ContactForm() {
             </FormItem>
           )}
         />
-        <Button type="submit" size="lg" className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
-          Send Message <Send className="ml-2 h-4 w-4" />
+        <Button type="submit" size="lg" className="w-full bg-primary hover:bg-primary/90 text-primary-foreground" disabled={isSubmitting}>
+          {isSubmitting ? (
+            <>
+              <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+              Sending...
+            </>
+          ) : (
+            <>
+              Send Message <Send className="ml-2 h-4 w-4" />
+            </>
+          )}
         </Button>
       </form>
     </Form>
