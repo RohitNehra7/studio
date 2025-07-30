@@ -1,6 +1,7 @@
 
 import { HeroSection } from '@/components/home/hero-section';
 import { OurApproach } from '@/components/home/our-approach-section';
+import { ServicesSection } from '@/components/home/services-section';
 import { ContactCallToAction } from '@/components/home/contact-cta-section';
 
 export default function HomePage() {
@@ -8,6 +9,7 @@ export default function HomePage() {
     <div className="animate-in fade-in duration-500">
       <HeroSection />
       <OurApproach />
+      <ServicesSection />
       <ContactCallToAction />
     </div>
   );
