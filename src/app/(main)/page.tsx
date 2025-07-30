@@ -15,7 +15,7 @@ export default function HomePage() {
   return (
     <div className="animate-in fade-in duration-500">
       <section className="relative h-[80vh] min-h-[600px] flex items-center justify-center text-center text-white overflow-hidden">
-        <div className="absolute inset-0 bg-black/60 z-10" />
+        <div className="absolute inset-0 bg-black/50 z-10 backdrop-blur-sm" />
          <div className="absolute inset-0 z-0 w-full h-full">
             <div className="flex animate-scroll-infinite" style={{ animationDuration: '60s' }}>
               {[...heroImages, ...heroImages].map((image, index) => (
