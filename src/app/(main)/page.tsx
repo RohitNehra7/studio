@@ -1,7 +1,12 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Zap, Gem, Palette, Mail, Phone, MapPin } from "lucide-react";
+import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
+import { useRef } from "react";
 
 const heroImages = [
   { src: "https://images.unsplash.com/photo-1542361325-11588f495147?q=80&w=2940&auto=format&fit=crop", alt: "Modern architectural building", hint: "architecture building" },
@@ -12,9 +17,36 @@ const heroImages = [
 ];
 
 export default function HomePage() {
+   const plugin = useRef(
+    Autoplay({ delay: 4000, stopOnInteraction: true })
+  );
+  
   return (
     <div className="animate-in fade-in duration-500">
-      <section className="relative h-[80vh] min-h-[600px] flex items-center justify-center text-center text-white bg-card">
+      <section className="relative h-[80vh] min-h-[600px] flex items-center justify-center text-center text-white">
+         <Carousel
+          plugins={[plugin.current]}
+          className="absolute inset-0 w-full h-full"
+          onMouseEnter={plugin.current.stop}
+          onMouseLeave={plugin.current.reset}
+          opts={{ loop: true }}
+        >
+          <CarouselContent className="h-full">
+            {heroImages.map((image, index) => (
+              <CarouselItem key={index} className="h-full">
+                <Image
+                  src={image.src}
+                  alt={image.alt}
+                  layout="fill"
+                  objectFit="cover"
+                  className="z-0"
+                  data-ai-hint={image.hint}
+                  priority={index === 0}
+                />
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+        </Carousel>
         <div className="absolute inset-0 bg-black/50 z-10 backdrop-blur-sm" />
         <div className="relative z-20 container mx-auto px-4 flex flex-col items-center">
           <h1 className="font-headline text-5xl md:text-7xl lg:text-8xl font-bold text-primary tracking-tight">
@@ -129,3 +161,4 @@ export default function HomePage() {
     </div>
   );
 }
+    
