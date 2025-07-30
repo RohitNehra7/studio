@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -52,25 +53,28 @@ export function Header() {
             <NavLink key={link.href} {...link} />
           ))}
         </nav>
-        <div className="md:hidden">
-          <Sheet open={isSheetOpen} onOpenChange={setSheetOpen}>
-            <SheetTrigger asChild>
-              <Button variant="ghost" size="icon">
-                <Menu className="h-6 w-6 text-foreground" />
-                <span className="sr-only">Open menu</span>
-              </Button>
-            </SheetTrigger>
-            <SheetContent side="right" className="w-[300px] sm:w-[400px] bg-background">
-              <SheetTitle className="sr-only">Mobile Menu</SheetTitle>
-              <div className="flex flex-col items-center justify-center h-full">
-                <nav className="flex flex-col items-center gap-6">
-                  {navLinks.map((link) => (
-                     <NavLink key={link.href} {...link} className="text-2xl"/>
-                  ))}
-                </nav>
-              </div>
-            </SheetContent>
-          </Sheet>
+        <div className="flex items-center gap-2">
+            <ThemeToggle />
+            <div className="md:hidden">
+            <Sheet open={isSheetOpen} onOpenChange={setSheetOpen}>
+                <SheetTrigger asChild>
+                <Button variant="ghost" size="icon">
+                    <Menu className="h-6 w-6 text-foreground" />
+                    <span className="sr-only">Open menu</span>
+                </Button>
+                </SheetTrigger>
+                <SheetContent side="right" className="w-[300px] sm:w-[400px] bg-background">
+                <SheetTitle className="sr-only">Mobile Menu</SheetTitle>
+                <div className="flex flex-col items-center justify-center h-full">
+                    <nav className="flex flex-col items-center gap-6">
+                    {navLinks.map((link) => (
+                        <NavLink key={link.href} {...link} className="text-2xl"/>
+                    ))}
+                    </nav>
+                </div>
+                </SheetContent>
+            </Sheet>
+            </div>
         </div>
       </div>
     </header>
