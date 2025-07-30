@@ -17,7 +17,7 @@ const projects: Project[] = [
     category: 'Residential', 
     images: [
       { src: 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBob3VzZXxlbnwwfHx8fDE3NTQ2NTI1MDV8MA&ixlib=rb-4.1.0&q=80&w=1080', hint: 'modern house exterior' },
-      { src: 'https://images.unsplash.com/photo-1613553423758-d8713b1b6d7f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjBob3VzZSUyMGludGVyaW9yfGVufDB8fHx8MTc1NDY2Mjg3Nnww&ixlib=rb-4.1.0&q=80&w=1080', hint: 'modern house interior' },
+      { src: 'https://images.unsplash.com/photo-1613553423758-d8713b1b6d7f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjBob3VzZSUyMGludGVyaW9yfGVufDB8fHx8fDE3NTQ2NjI4NzZ8MA&ixlib=rb-4.1.0&q=80&w=1080', hint: 'modern house interior' },
       { src: 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBsaXZpbmclMjByb29tfGVufDB8fHx8fDE3NTQ2NjI4ODZ8MA&ixlib=rb-4.1.0&q=80&w=1080', hint: 'modern living room' },
     ],
     description: 'A masterpiece of modern residential design, this home balances sharp lines with natural materials to create a peaceful and welcoming environment.' 
@@ -27,7 +27,7 @@ const projects: Project[] = [
     title: 'Quantum Tower', 
     category: 'Commercial', 
     images: [
-      { src: 'https://images.unsplash.com/photo-1542330952-bffc59e816b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxza3lzY3JhcGVyfGVufDB8fHx8fDE3NTQ2NTI1MTN8MA&ixlib=rb-4.1.0&q=80&w=1080', hint: 'skyscraper exterior' },
+      { src: 'https://images.unsplash.com/photo-1422442468333-3a7a1b3c43f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmdXR1cmlzdGljJTIwc2t5c2NyYXBlcnxlbnwwfHx8fDE3NTQ3NDEzNTJ8MA&ixlib=rb-4.1.0&q=80&w=1080', hint: 'skyscraper exterior' },
       { src: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxvZmZpY2UlMjBsb2JieXxlbnwwfHx8fDE3NTQ2NjI5MTZ8MA&ixlib=rb-4.1.0&q=80&w=1080', hint: 'office lobby' },
       { src: 'https://images.unsplash.com/photo-1552664730-d307ca884978?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBvZmZpY2V8ZW58MHx8fHwxNzU0NjYyOTI4fDA&ixlib=rb-4.1.0&q=80&w=1080', hint: 'modern office' },
     ],
@@ -71,7 +71,7 @@ const projects: Project[] = [
     title: 'Horizon Art Gallery', 
     category: 'Institutional', 
     images: [
-        { src: 'https://images.unsplash.com/photo-1549492423-4002122c3983?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhcnQlMjBnYWxsZXJ5fGVufDB8fHx8fDE3NTQ2NTI1NDJ8MA&ixlib=rb-4.1.0&q=80&w=1080', hint: 'art gallery exterior' },
+        { src: 'https://images.unsplash.com/photo-1583227564999-5221b6d1b8c2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzb2JlciUyMGFydCUyMGdhbGxlcnl8ZW58MHx8fHwxNzU0NzQxNDM0fDA&ixlib=rb-4.1.0&q=80&w=1080', hint: 'art gallery exterior' },
         { src: 'https://images.unsplash.com/photo-1564942250176-3f13ad454b1e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhcnQlMjBnYWxsZXJ5JTIwaW50ZXJpb3J8ZW58MHx8fHwxNzU0NjYyOTk5fDA&ixlib=rb-4.1.0&q=80&w=1080', hint: 'art gallery interior' },
         { src: 'https://images.unsplash.com/photo-1578326238965-985f4103c0d8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhcnQlMjBleGhpYml0fGVufDB8fHx8fDE3NTQ2NjMwMDh8MA&ixlib=rb-4.1.0&q=80&w=1080', hint: 'art exhibit' },
     ],
@@ -82,7 +82,7 @@ const projects: Project[] = [
     title: 'Lakeside Villa', 
     category: 'Residential', 
     images: [
-        { src: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjB2aWxsYXxlbnwwfHx8fDE3NTQ2NTI1NDl8MA&ixlib=rb-4.1.0&q=80&w=1080', hint: 'luxury villa exterior' },
+        { src: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjB2aWxsYXxlbnwwfHx8fHwxNzU0NjUyNTQ5fDA&ixlib=rb-4.1.0&q=80&w=1080', hint: 'luxury villa exterior' },
         { src: 'https://images.unsplash.com/photo-1600585152225-358945c58469?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjB2aWxsYSUyMGludGVyaW9yfGVufDB8fHx8fDE3NTQ2NjMwMjB8MA&ixlib=rb-4.1.0&q=80&w=1080', hint: 'luxury villa interior' },
         { src: 'https://images.unsplash.com/photo-1615571022219-eb45cf72d813?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBwb29sfGVufDB8fHx8fDE3NTQ2NjMwMjl8MA&ixlib=rb-4.1.0&q=80&w=1080', hint: 'luxury pool' },
     ],
@@ -93,7 +93,7 @@ const projects: Project[] = [
     title: 'Pinnacle Plaza', 
     category: 'Commercial', 
     images: [
-        { src: 'https://images.unsplash.com/photo-1596213295932-047fd6c4c478?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzaG9wcGluZyUyMG1hbGx8ZW58MHx8fHwxNzU0NjUyNTU3fDA&ixlib=rb-4.1.0&q=80&w=1080', hint: 'shopping mall exterior' },
+        { src: 'https://images.unsplash.com/photo-1580610447943-1bfbef54f4c6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBzaG9wcGluZyUyMG1hbGx8ZW58MHx8fHwxNzU0NzQxNDc5fDA&ixlib=rb-4.1.0&q=80&w=1080', hint: 'shopping mall exterior' },
         { src: 'https://images.unsplash.com/photo-1555529771-835f59ee5020?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzaG9wcGluZyUyMG1hbGwlMjBpbnRlcmlvcnxlbnwwfHx8fHwxNzU0NjYzMDQwfDA&ixlib=rb-4.1.0&q=80&w=1080', hint: 'shopping mall interior' },
         { src: 'https://images.unsplash.com/photo-1567958451996-09b34355bf42?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmb29kJTIwY291cnR8ZW58MHx8fHwxNzU0NjYzMDUwfDA&ixlib=rb-4.1.0&q=80&w=1080', hint: 'food court' },
     ],
