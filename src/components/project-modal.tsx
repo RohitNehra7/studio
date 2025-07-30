@@ -3,7 +3,7 @@
 
 import Image from 'next/image';
 import { X, ArrowLeft, ArrowRight, Github, ExternalLink } from 'lucide-react';
-import { Dialog, DialogContent } from '@/components/ui/dialog';
+import { Dialog, DialogContent, DialogTitle } from '@/components/ui/dialog';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from '@/components/ui/carousel';
@@ -27,6 +27,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
   return (
     <Dialog open={true} onOpenChange={onClose}>
       <DialogContent className="max-w-4xl w-full p-0 bg-card/80 dark:bg-[#131729]/80 backdrop-blur-sm border-border/20 !rounded-2xl">
+        <DialogTitle className="sr-only">{project.title}</DialogTitle>
         <div className="grid grid-cols-1 md:grid-cols-2 max-h-[90vh]">
           <div className="relative md:order-2">
             <Carousel className="w-full h-full">
@@ -85,5 +86,3 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
     </Dialog>
   );
 }
-
-    
