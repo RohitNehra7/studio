@@ -4,7 +4,7 @@ import { Award, Lightbulb, Users, Heart, Leaf, Star, Rocket } from 'lucide-react
 
 export default function AboutPage() {
   return (
-    <div className="animate-in fade-in duration-500">
+    <div className="animate-in fade-in duration-500 pt-20">
       <header className="relative py-24 md:py-40 text-center text-white bg-card">
          <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-background/20 z-10" />
           <Image

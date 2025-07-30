@@ -3,7 +3,7 @@ import { Mail, Phone, MapPin } from 'lucide-react';
 
 export default function ContactPage() {
   return (
-    <div className="animate-in fade-in duration-500">
+    <div className="animate-in fade-in duration-500 pt-20">
       <header className="text-center py-16 md:py-24 bg-gradient-to-b from-card to-background">
         <h1 className="font-headline text-4xl md:text-5xl font-bold text-primary">Contact Us</h1>
         <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">

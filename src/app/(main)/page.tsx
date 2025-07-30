@@ -1,4 +1,3 @@
-"use client";
 
 import { HeroSection } from '@/components/home/hero-section';
 import { OurApproach } from '@/components/home/our-approach-section';
