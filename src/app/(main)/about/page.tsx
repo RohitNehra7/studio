@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Award, Lightbulb, Users } from 'lucide-react';
+import { Award, Lightbulb, Users, Heart, Leaf, Star, Rocket } from 'lucide-react';
 
 export default function AboutPage() {
   return (
@@ -55,38 +55,60 @@ export default function AboutPage() {
             <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary">Our Core Values</h2>
             <p className="mt-3 text-lg text-muted-foreground">The principles that guide our work and define our character.</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
             <Card className="text-center bg-background/50">
-              <CardHeader>
-                <div className="mx-auto bg-primary/20 text-primary p-3 rounded-full w-fit">
-                    <Lightbulb className="h-8 w-8"/>
-                </div>
-                <CardTitle className="font-headline text-2xl pt-4">Innovation</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">We constantly explore new materials, technologies, and ideas to push the boundaries of what's possible in architecture.</p>
-              </CardContent>
-            </Card>
-             <Card className="text-center bg-background/50">
               <CardHeader>
                 <div className="mx-auto bg-primary/20 text-primary p-3 rounded-full w-fit">
                     <Award className="h-8 w-8"/>
                 </div>
-                <CardTitle className="font-headline text-2xl pt-4">Excellence</CardTitle>
+                <CardTitle className="font-headline text-2xl pt-4">Design Excellence</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground">Our commitment to the highest standards of quality and craftsmanship is evident in every detail of our work.</p>
+                <p className="text-muted-foreground">We create timeless, functional, and aesthetic spaces that reflect creativity, precision, and purpose.</p>
               </CardContent>
             </Card>
              <Card className="text-center bg-background/50">
               <CardHeader>
                 <div className="mx-auto bg-primary/20 text-primary p-3 rounded-full w-fit">
-                    <Users className="h-8 w-8"/>
+                    <Heart className="h-8 w-8"/>
                 </div>
-                <CardTitle className="font-headline text-2xl pt-4">Collaboration</CardTitle>
+                <CardTitle className="font-headline text-2xl pt-4">Client-Centric Approach</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground">We believe the best results come from working closely with our clients, understanding their needs and aspirations.</p>
+                <p className="text-muted-foreground">We design with empathy, listening deeply to every client’s vision and delivering tailored, meaningful solutions.</p>
+              </CardContent>
+            </Card>
+             <Card className="text-center bg-background/50">
+              <CardHeader>
+                <div className="mx-auto bg-primary/20 text-primary p-3 rounded-full w-fit">
+                    <Leaf className="h-8 w-8"/>
+                </div>
+                <CardTitle className="font-headline text-2xl pt-4">Sustainability</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">We integrate environmentally responsible practices and materials to build spaces that respect the planet.</p>
+              </CardContent>
+            </Card>
+            <Card className="text-center bg-background/50 md:col-start-1 lg:col-start-auto">
+              <CardHeader>
+                <div className="mx-auto bg-primary/20 text-primary p-3 rounded-full w-fit">
+                    <Star className="h-8 w-8"/>
+                </div>
+                <CardTitle className="font-headline text-2xl pt-4">Integrity & Transparency</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">We value honesty, fairness, and clear communication in every relationship — from concept to construction.</p>
+              </CardContent>
+            </Card>
+            <Card className="text-center bg-background/50">
+              <CardHeader>
+                <div className="mx-auto bg-primary/20 text-primary p-3 rounded-full w-fit">
+                    <Rocket className="h-8 w-8"/>
+                </div>
+                <CardTitle className="font-headline text-2xl pt-4">Innovation & Adaptability</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">We embrace bold ideas, emerging technologies, and ever-changing needs to shape the future of architecture.</p>
               </CardContent>
             </Card>
           </div>
