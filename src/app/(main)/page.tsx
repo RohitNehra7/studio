@@ -6,7 +6,7 @@ import { ContactCallToAction } from '@/components/home/contact-cta-section';
 
 export default function HomePage() {
   return (
-    <div className="animate-in fade-in duration-500">
+    <div className="animate-in fade-in duration-500 -mt-20">
       <HeroSection />
       <ServicesSection />
       <OurApproach />
