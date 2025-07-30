@@ -18,13 +18,13 @@ export function ContactCallToAction() {
                         <h3 className="text-xl font-semibold text-foreground">Our Office</h3>
                         <p className="text-muted-foreground">123 Architecture Ave, Design City</p>
                     </div>
-                    <div className="flex flex-col items-center gap-4 p-6 rounded-lg transition-all duration-300 hover:bg-card hover:shadow-xl">
+                    <a href="mailto:nehra7991@gmal.com" className="flex flex-col items-center gap-4 p-6 rounded-lg transition-all duration-300 hover:bg-card hover:shadow-xl">
                         <div className="bg-accent/20 text-accent p-4 rounded-full transition-transform duration-300 hover:scale-110">
                             <Mail className="h-8 w-8" />
                         </div>
                         <h3 className="text-xl font-semibold text-foreground">Email Us</h3>
-                        <p className="text-muted-foreground">contact@thearchithanarchitects.com</p>
-                    </div>
+                        <p className="text-muted-foreground">nehra7991@gmal.com</p>
+                    </a>
                     <a href="tel:+918168357643" className="flex flex-col items-center gap-4 p-6 rounded-lg transition-all duration-300 hover:bg-card hover:shadow-xl">
                         <div className="bg-accent/20 text-accent p-4 rounded-full transition-transform duration-300 hover:scale-110">
                             <Phone className="h-8 w-8" />
