@@ -14,24 +14,17 @@ const heroImages = [
 export default function HomePage() {
   return (
     <div className="animate-in fade-in duration-500">
-      <section className="relative h-[80vh] min-h-[600px] flex items-center justify-center text-center text-white overflow-hidden">
+      <section className="relative h-[80vh] min-h-[600px] flex items-center justify-center text-center text-white">
         <div className="absolute inset-0 bg-black/50 z-10 backdrop-blur-sm" />
-         <div className="absolute inset-0 z-0 w-full h-full">
-            <div className="flex animate-scroll-infinite" style={{ animationDuration: '60s' }}>
-              {[...heroImages, ...heroImages].map((image, index) => (
-                <Image
-                  key={index}
-                  src={image.src}
-                  alt={image.alt}
-                  width={1920}
-                  height={1080}
-                  className="w-[25vw] h-full object-cover flex-shrink-0"
-                  priority={index < 5}
-                  data-ai-hint={image.hint}
-                />
-              ))}
-            </div>
-          </div>
+         <Image
+            src="https://images.unsplash.com/photo-1542361325-11588f495147?q=80&w=2940&auto=format&fit=crop"
+            alt="Modern architectural building"
+            layout="fill"
+            objectFit="cover"
+            className="z-0"
+            priority
+            data-ai-hint="architecture building"
+          />
         <div className="relative z-20 container mx-auto px-4 flex flex-col items-center">
           <h1 className="font-headline text-5xl md:text-7xl lg:text-8xl font-bold text-primary tracking-tight">
             The Archithan Architects
