@@ -18,7 +18,7 @@ const approaches = [
         category: "Commercial Vision",
         title: "Transforming business environments",
         description: "Our team designs modern, functional commercial spaces that not only inspire productivity but also embody your brand’s identity and drive success.",
-        imageSrc: "https://images.unsplash.com/photo-1518005020951-eccb494ad742?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxidWlsZGluZ3xlbnwwfHx8fDE3NTM5OTYxMDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+        imageSrc: "https://images.unsplash.com/photo-1556761175-4b46a572b786?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxvZmZpY2UlMjBkZXNpZ258ZW58MHx8fHwxNzUzOTk2MTkwfDA&ixlib=rb-4.1.0&q=80&w=1080",
         imageHint: "modern office"
     },
     {
