@@ -10,19 +10,19 @@ const approaches = [
     {
         title: "Residential Expertise",
         description: "We craft timeless homes where comfort, luxury, and sustainability converge. Our design philosophy centers on creating refined architectural solutions that are meticulously tailored to your unique lifestyle, ensuring every space is both beautiful and deeply personal.",
-        imageSrc: "https://images.unsplash.com/photo-1706808849780-7a04fbac83ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxsdXh1cnklMjBob21lfGVufDB8fHx8MTc1Mzk4NzgwNXww&ixlib=rb-4.1.0&q=80&w=1080",
+        imageSrc: "https://images.unsplash.com/photo-1696986293936-d8d080a88f50?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxsdXh1cnklMjBob21lfGVufDB8fHx8MTc1Mzk4NzgwNXww&ixlib=rb-4.1.0&q=80&w=1080",
         imageHint: "luxury home",
     },
     {
         title: "Commercial Vision",
         description: "Our team designs modern, functional commercial spaces that not only inspire productivity but also embody your brand’s identity. From innovative office layouts to captivating retail environments, we deliver solutions that drive success.",
-        imageSrc: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBvZmZpY2V8ZW58MHx8fHwxNzUzOTg3ODA1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+        imageSrc: "https://images.unsplash.com/photo-1646153114001-495dfb56506d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtb2Rlcm4lMjBvZmZpY2V8ZW58MHx8fHwxNzUzOTg3ODA1fDA&ixlib=rb-4.1.0&q=80&w=1080",
         imageHint: "modern office",
     },
     {
         title: "Interior Mastery",
         description: "Experience the art of curated interiors where elegance and cultural nuance intertwine. We create bespoke designs that leave a lasting impression, blending luxurious materials and thoughtful details to craft spaces of true distinction.",
-        imageSrc: "https://images.unsplash.com/photo-1564078516393-cf04bd966897?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxsdXh1cnklMjBsaXZpbmclMjByb29tfGVufDB8fHx8MTc1Mzk4NzgwNXww&ixlib=rb-4.1.0&q=80&w=1080",
+        imageSrc: "https://images.unsplash.com/photo-1621293954908-907159247fc8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxsdXh1cnklMjBsaXZpbmclMjByb29tfGVufDB8fHx8MTc1Mzk4NzgwNXww&ixlib=rb-4.1.0&q=80&w=1080",
         imageHint: "luxury living room",
     }
 ];
