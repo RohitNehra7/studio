@@ -1,3 +1,4 @@
+
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
@@ -19,6 +20,7 @@ export function Footer() {
           <div className="md:justify-self-center">
             <h3 className="font-headline text-lg font-semibold text-foreground mb-4">Quick Links</h3>
             <ul className="space-y-2">
+              <li><Link href="/" className="hover:text-primary transition-colors">Home</Link></li>
               <li><Link href="/services" className="hover:text-primary transition-colors">Services</Link></li>
               <li><Link href="/about" className="hover:text-primary transition-colors">About Us</Link></li>
               <li><Link href="/contact" className="hover:text-primary transition-colors">Contact</Link></li>

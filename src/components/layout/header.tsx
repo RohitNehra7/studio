@@ -19,11 +19,11 @@ import {
 
 
 const navLinks = [
+  { href: "/", label: "Home" },
   { 
     href: "/services", 
     label: "Services",
   },
-  { href: "/studio", label: "Studio" },
   { href: "/about", label: "About Us" },
   { 
     href: "/contact", 
@@ -50,7 +50,7 @@ export function Header() {
   }, []);
 
   const NavLink = ({ href, label, className, isDropdown, dropdownItems }: { href: string; label: string; className?: string, isDropdown?: boolean, dropdownItems?: {href: string, label: string}[] }) => {
-    const isActive = pathname.startsWith(href);
+    const isActive = pathname === href;
 
     if (isDropdown) {
         return (
@@ -61,7 +61,7 @@ export function Header() {
                         className={cn(
                             "text-lg hover:text-primary hover:no-underline transition-colors duration-300",
                             "text-foreground/80",
-                            isActive && "text-primary font-semibold",
+                            pathname.startsWith(href) && "text-primary font-semibold",
                             className
                         )}
                         >
