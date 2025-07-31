@@ -12,34 +12,28 @@ const approaches = [
         title: "Elevate your living spaces",
         description: "We craft timeless homes where comfort, luxury, and sustainability converge, creating refined architectural solutions tailored to your unique lifestyle.",
         imageSrc: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBob21lfGVufDB8fHx8fDE3NTQ3NDg2NDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
-        imageHint: "luxury home",
-        buttonText: "View Homes",
-        buttonLink: "/projects"
+        imageHint: "luxury home"
     },
     {
         category: "Commercial Vision",
         title: "Transforming business environments",
         description: "Our team designs modern, functional commercial spaces that not only inspire productivity but also embody your brand’s identity and drive success.",
         imageSrc: "https://images.unsplash.com/photo-1552664730-d307ca884978?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBvZmZpY2V8ZW58MHx8fHwxNzU0NjYyOTI4fDA&ixlib=rb-4.1.0&q=80&w=1080",
-        imageHint: "modern office",
-        buttonText: "Explore Solutions",
-        buttonLink: "/services"
+        imageHint: "modern office"
     },
     {
         category: "Interior Mastery",
         title: "Curated interiors, lasting impressions",
         description: "Experience the art of curated interiors where elegance and cultural nuance intertwine. We create bespoke designs that leave a lasting impression.",
         imageSrc: "https://images.unsplash.com/photo-1616046229478-9901c5536a45?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBsaXZpbmclMjByb29tfGVufDB8fHx8fDE3NTQ3NDg2OTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-        imageHint: "luxury living room",
-        buttonText: "Discover Designs",
-        buttonLink: "/projects"
+        imageHint: "luxury living room"
     }
 ];
 
 export function OurApproach() {
     return (
         <section className="relative bg-background text-foreground">
-            <div className="text-center py-12 md:py-16">
+            <div className="text-center py-16 md:py-12">
                 <h2 className="font-headline text-3xl md:text-4xl text-primary mb-4">Our Approach to Excellence</h2>
                 <p className="text-lg text-muted-foreground max-w-3xl mx-auto px-4">
                     Our philosophy is built on three core pillars that guide every project from concept to completion.
@@ -59,17 +53,10 @@ export function OurApproach() {
                             transition={{ duration: 0.6, ease: "easeOut" }}
                             className="bg-card rounded-2xl shadow-2xl w-full max-w-4xl h-full max-h-[80vh] flex flex-col p-4 md:p-6 overflow-hidden border border-border/10"
                         >
-                            <div className="text-left mb-2">
+                            <div className="text-left mb-4">
                                 <p className="text-sm font-semibold uppercase tracking-widest text-primary mb-2">{approach.category}</p>
-                                <h3 className="font-headline text-3xl md:text-4xl font-bold text-foreground mb-2">{approach.title}</h3>
+                                <h3 className="font-headline text-3xl md:text-4xl font-bold text-foreground mb-3">{approach.title}</h3>
                                 <p className="text-base text-muted-foreground">{approach.description}</p>
-                            </div>
-                            <div className="mt-auto mb-4">
-                                <Button size="lg" asChild className="bg-primary hover:bg-primary/90 text-primary-foreground">
-                                    <Link href={approach.buttonLink}>
-                                        {approach.buttonText} <ArrowRight className="ml-2 h-5 w-5" />
-                                    </Link>
-                                </Button>
                             </div>
                              <div className="relative flex-grow w-full mt-auto rounded-xl overflow-hidden">
                                 <Image
