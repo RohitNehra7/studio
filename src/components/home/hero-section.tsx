@@ -13,7 +13,7 @@ export function HeroSection() {
                 <div className="animate-in fade-in slide-in-from-left duration-700">
                     <div className="bg-card p-4 rounded-lg shadow-2xl">
                         <Image
-                            src="https://placehold.co/800x800.png"
+                            src="/logo.jpeg"
                             alt="The Archithan Architects Logo"
                             width={800}
                             height={800}
