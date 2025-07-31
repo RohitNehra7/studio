@@ -16,40 +16,46 @@ export default function ContactPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           <div className="bg-card p-8 rounded-lg">
             <h2 className="font-headline text-3xl text-primary mb-6">Get in Touch</h2>
-            <div className="space-y-6">
-              <div className="flex items-start gap-4">
-                <div className="bg-accent/20 text-accent p-3 rounded-full mt-1">
-                  <MapPin className="h-6 w-6" />
+            <div className="space-y-4">
+              <a href="https://share.google/1DiYzQ8EmrLUqr54W" target="_blank" rel="noopener noreferrer" className="block p-4 rounded-lg transition-all duration-300 hover:bg-background/50 hover:shadow-md">
+                <div className="flex items-start gap-4">
+                  <div className="bg-accent/20 text-accent p-3 rounded-full mt-1 flex-shrink-0">
+                    <MapPin className="h-6 w-6" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-foreground">Our Office</h3>
+                    <p className="text-muted-foreground">
+                      Gate No. 1, Plot No. 1/9 Ground Floor, nearby Ozone City, Road, Mahua Khera, Aligarh, Uttar Pradesh 202001
+                    </p>
+                  </div>
                 </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-foreground">Our Office</h3>
-                   <a href="https://share.google/1DiYzQ8EmrLUqr54W" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
-                    Gate No. 1, Plot No. 1/9 Ground Floor, nearby Ozone City, Road, Mahua Khera, Aligarh, Uttar Pradesh 202001
-                  </a>
+              </a>
+              <a href="mailto:thearchithanarchitects@gmail.com" className="block p-4 rounded-lg transition-all duration-300 hover:bg-background/50 hover:shadow-md">
+                <div className="flex items-start gap-4">
+                  <div className="bg-accent/20 text-accent p-3 rounded-full mt-1 flex-shrink-0">
+                    <Mail className="h-6 w-6" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-foreground">Email Us</h3>
+                    <p className="text-muted-foreground">
+                      thearchithanarchitects@gmail.com
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div className="flex items-start gap-4">
-                 <div className="bg-accent/20 text-accent p-3 rounded-full mt-1">
-                  <Mail className="h-6 w-6" />
+              </a>
+              <a href="tel:+918279891368" className="block p-4 rounded-lg transition-all duration-300 hover:bg-background/50 hover:shadow-md">
+                <div className="flex items-start gap-4">
+                  <div className="bg-accent/20 text-accent p-3 rounded-full mt-1 flex-shrink-0">
+                    <Phone className="h-6 w-6" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-foreground">Call Us</h3>
+                    <p className="text-muted-foreground">
+                      +91-8279891368
+                    </p>
+                  </div>
                 </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-foreground">Email Us</h3>
-                  <a href="mailto:thearchithanarchitects@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
-                    thearchithanarchitects@gmail.com
-                  </a>
-                </div>
-              </div>
-              <div className="flex items-start gap-4">
-                 <div className="bg-accent/20 text-accent p-3 rounded-full mt-1">
-                  <Phone className="h-6 w-6" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-foreground">Call Us</h3>
-                  <a href="tel:+918279891368" className="text-muted-foreground hover:text-primary transition-colors">
-                    +91-8279891368
-                  </a>
-                </div>
-              </div>
+              </a>
             </div>
           </div>
           <div className="bg-card p-8 rounded-lg">
