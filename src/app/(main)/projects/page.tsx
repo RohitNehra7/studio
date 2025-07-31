@@ -100,8 +100,8 @@ const projects = [
     category: 'Commercial', 
     images: [
         { src: 'https://images.unsplash.com/photo-1580610447943-1bfbef54f4c6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBzaG9wcGluZyUyMG1hbGx8ZW58MHx8fHwxNzU0NzQxNDc5fDA&ixlib=rb-4.1.0&q=80&w=1080', hint: 'shopping mall exterior' },
-        { src: 'https://images.unsplash.com/photo-1555529771-835f59ee5020?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzaG9wcGluZyUyMG1hbGwlMjBpbnRlcmlvcnxlbnwwfHx8fHwxNzU0NjYzMDQwfDA&ixlib=rb-4.1.0&q=80&w=1080', hint: 'shopping mall interior' },
-        { src: 'https://images.unsplash.com/photo-1567958451996-09b34355bf42?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmb29kJTIwY291cnR8ZW58MHx8fHwxNzU0NjYzMDUwfDA&ixlib=rb-4.1.0&q=80&w=1080', hint: 'food court' },
+        { src: 'https://images.unsplash.com/photo-1555529771-835f59ee5020?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxzaG9wcGluZyUyMG1hbGwlMjBpbnRlcmlvcnxlbnwwfHx8fHwxNzU0NjYzMDQwfDA&ixlib=rb-4.1.0&q=80&w=1080', hint: 'shopping mall interior' },
+        { src: 'https://images.unsplash.com/photo-1567958451996-09b34355bf42?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxmb29kJTIwY291cnR8ZW58MHx8fHwxNzU0NjYzMDUwfDA&ixlib=rb-4.1.0&q=80&w=1080', hint: 'food court' },
     ],
     description: 'A premier shopping destination with a grand, light-filled atrium that creates an unforgettable retail experience.',
     techStack: ['Revit', '3ds Max', 'V-Ray']
@@ -130,6 +130,7 @@ export default function ProjectsPage() {
               key={category}
               variant={filter === category ? 'default' : 'outline'}
               onClick={() => setFilter(category)}
+              className="rounded-full"
             >
               {category}
             </Button>
@@ -156,7 +157,7 @@ export default function ProjectsPage() {
                       <CarouselContent>
                         {project.images.map((image, index) => (
                           <CarouselItem key={index}>
-                            <div className="aspect-[4/3] relative">
+                            <div className="aspect-[4/3] relative rounded-t-full overflow-hidden">
                               <Image
                                 src={image.src}
                                 alt={`${project.title} - Image ${index + 1}`}
@@ -190,3 +191,5 @@ export default function ProjectsPage() {
     </>
   );
 }
+
+    
