@@ -6,7 +6,7 @@ import { Zap, Gem, Palette } from "lucide-react";
 
 export function OurApproach() {
     return (
-        <section className="relative py-20 md:py-32 bg-card overflow-hidden">
+        <section className="relative py-16 md:py-24 bg-card overflow-hidden">
             <div className="relative z-20 container mx-auto px-4 max-w-4xl text-center">
                 <h2 className="font-headline text-3xl md:text-4xl text-primary mb-12">Our Approach to Excellence</h2>
                 <div className="grid md:grid-cols-3 gap-8 mb-12">
