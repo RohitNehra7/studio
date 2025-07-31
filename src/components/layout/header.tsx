@@ -27,11 +27,6 @@ const navLinks = [
   { 
     href: "/contact", 
     label: "Contact",
-    isDropdown: true,
-    dropdownItems: [
-        { href: "/contact", label: "Contact Us" },
-        { href: "/careers", label: "Careers" },
-    ]
   },
 ];
 
