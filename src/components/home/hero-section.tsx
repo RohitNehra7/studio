@@ -33,8 +33,8 @@ export function HeroSection() {
                     </div>
                     <div className="mt-10 flex flex-wrap justify-center lg:justify-start gap-4">
                         <Button size="lg" asChild variant="outline" className="border-primary text-primary hover:bg-primary/10">
-                            <Link href="/projects">
-                                See projects
+                            <Link href="/services">
+                                See services
                             </Link>
                         </Button>
                         <Button size="lg" asChild className="bg-primary hover:bg-primary/90 text-primary-foreground">
