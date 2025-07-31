@@ -8,22 +8,22 @@ import { ArrowRight } from "lucide-react";
 
 const approaches = [
     {
-        title: "Aesthetic Elegance",
-        description: "Fusing timeless beauty with functional design to create inspiring and livable spaces that stand the test of time.",
-        imageSrc: "https://images.unsplash.com/photo-1530103043960-ef38714abb15?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhZXN0aGV0aWN8ZW58MHx8fHwxNzUzOTg2OTM0fDA&ixlib=rb-4.1.0&q=80&w=1080",
-        imageHint: "aesthetic",
+        title: "Residential Expertise",
+        description: "Timeless homes designed for comfort, luxury, and sustainability. Discover refined architecture tailored to your lifestyle.",
+        imageSrc: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBob21lfGVufDB8fHx8fDE3NTQ3NDg2NDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+        imageHint: "luxury home",
     },
     {
-        title: "Innovative Solutions",
-        description: "Leveraging cutting-edge technology and materials to redefine what's possible in modern architecture.",
-        imageSrc: "https://images.unsplash.com/photo-1615823438594-18b7bb699aeb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxpbm5vdmF0aXZlfGVufDB8fHx8MTc1Mzk4Njk4OXww&ixlib=rb-4.1.0&q=80&w=1080",
-        imageHint: "innovative",
+        title: "Commercial Vision",
+        description: "Modern, functional spaces that inspire productivity and reflect your brand’s identity. Explore our commercial solutions.",
+        imageSrc: "https://images.unsplash.com/photo-1552664730-d307ca884978?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBvZmZpY2V8ZW58MHx8fHwxNzU0NjYyOTI4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+        imageHint: "modern office",
     },
     {
-        title: "Uncompromising Quality",
-        description: "A steadfast commitment to the highest standards of craftsmanship and materials from concept to completion.",
-        imageSrc: "https://images.unsplash.com/photo-1428908728789-d2de25dbd4e2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxlbmdpbmVlciUyMHBsYW5zfGVufDB8fHx8fDE3NTQ3NDI2MzR8MA&ixlib=rb-4.1.0&q=80&w=1080",
-        imageHint: "engineer plans",
+        title: "Interior Mastery",
+        description: "Elegant, bespoke interiors blending luxury with cultural nuance. Experience interiors crafted for distinction.",
+        imageSrc: "https://images.unsplash.com/photo-1616046229478-9901c5536a45?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBsaXZpbmclMjByb29tfGVufDB8fHx8fDE3NTQ3NDg2OTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+        imageHint: "luxury living room",
     }
 ];
 
