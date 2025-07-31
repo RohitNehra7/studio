@@ -65,7 +65,7 @@ export function OurApproach() {
                     </div>
                 ))}
             </div>
-             <div className="bg-background text-center py-12 md:py-16">
+             <div className="text-center pb-12 md:pb-16 pt-8">
                  <Button size="lg" asChild className="bg-primary hover:bg-primary/90 text-primary-foreground">
                     <Link href="/about">
                         More About Us <ArrowRight className="ml-2 h-5 w-5" />
