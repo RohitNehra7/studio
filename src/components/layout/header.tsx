@@ -24,6 +24,7 @@ const navLinks = [
     label: "Services",
   },
   { href: "/studio", label: "Studio" },
+  { href: "/about", label: "About Us" },
   { 
     href: "/contact", 
     label: "Contact",
