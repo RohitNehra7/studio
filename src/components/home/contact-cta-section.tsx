@@ -5,7 +5,7 @@ import { Mail, Phone, MapPin, ArrowRight } from "lucide-react";
 
 export function ContactCallToAction() {
     return (
-        <section className="py-20 md:py-32 bg-background">
+        <section className="py-20 md:py-32 bg-gradient-to-b from-card to-background">
             <div className="container mx-auto px-4 text-center">
                 <h2 className="font-headline text-3xl md:text-4xl text-primary mb-4">Let's Build Together</h2>
                 <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-12">
@@ -17,7 +17,7 @@ export function ContactCallToAction() {
                             <MapPin className="h-8 w-8" />
                         </div>
                         <h3 className="text-xl font-semibold text-foreground">Our Office</h3>
-                        <p className="text-muted-foreground text-sm">Gate No. 1, Plot No. 1/9 Ground Floor, Aligarh</p>
+                        <p className="text-muted-foreground text-sm">Gate No. 1, Plot No. 1/9 Ground Floor, nearby Ozone City, Road, Mahua Khera, Aligarh, Uttar Pradesh 202001</p>
                     </a>
                     <a href="mailto:thearchithanarchitects@gmail.com" className="flex flex-col items-center gap-4 p-6 rounded-lg transition-all duration-300 hover:bg-card hover:shadow-xl">
                         <div className="bg-accent/20 text-accent p-4 rounded-full transition-transform duration-300 hover:scale-110">
