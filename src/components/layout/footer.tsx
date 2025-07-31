@@ -1,7 +1,7 @@
 
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
+import { Instagram, Linkedin, Youtube } from "lucide-react";
 import { Logo } from "./logo";
 
 export function Footer() {
@@ -30,16 +30,10 @@ export function Footer() {
              <h3 className="font-headline text-lg font-semibold text-foreground mb-4">Connect With Us</h3>
             <div className="flex justify-center md:justify-start space-x-4">
               <Button variant="ghost" size="icon" asChild>
-                <Link href="#" aria-label="Facebook"><Facebook className="h-6 w-6 text-accent hover:text-primary transition-colors"/></Link>
+                <Link href="https://www.instagram.com/the_archithans" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><Instagram className="h-6 w-6 text-accent hover:text-primary transition-colors"/></Link>
               </Button>
               <Button variant="ghost" size="icon" asChild>
-                <Link href="#" aria-label="Twitter"><Twitter className="h-6 w-6 text-accent hover:text-primary transition-colors"/></Link>
-              </Button>
-              <Button variant="ghost" size="icon" asChild>
-                <Link href="#" aria-label="Instagram"><Instagram className="h-6 w-6 text-accent hover:text-primary transition-colors"/></Link>
-              </Button>
-              <Button variant="ghost" size="icon" asChild>
-                <Link href="#" aria-label="LinkedIn"><Linkedin className="h-6 w-6 text-accent hover:text-primary transition-colors"/></Link>
+                <Link href="https://www.youtube.com/@thearchithanarchitects" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><Youtube className="h-6 w-6 text-accent hover:text-primary transition-colors"/></Link>
               </Button>
             </div>
           </div>

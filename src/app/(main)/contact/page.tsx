@@ -23,7 +23,9 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-foreground">Our Office</h3>
-                  <p className="text-muted-foreground">123 Architecture Avenue, Design City, 12345</p>
+                   <a href="https://share.google/1DiYzQ8EmrLUqr54W" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                    Gate No. 1, Plot No. 1/9 Ground Floor, nearby Ozone City, Road, Mahua Khera, Aligarh, Uttar Pradesh 202001
+                  </a>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -32,8 +34,8 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-foreground">Email Us</h3>
-                  <a href="mailto:nehra7991@gmal.com" className="text-muted-foreground hover:text-primary transition-colors">
-                    nehra7991@gmal.com
+                  <a href="mailto:thearchithanarchitects@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
+                    thearchithanarchitects@gmail.com
                   </a>
                 </div>
               </div>
@@ -43,8 +45,8 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-foreground">Call Us</h3>
-                  <a href="tel:+918168357643" className="text-muted-foreground hover:text-primary transition-colors">
-                    +91-8168357643
+                  <a href="tel:+918279891368" className="text-muted-foreground hover:text-primary transition-colors">
+                    +91-8279891368
                   </a>
                 </div>
               </div>
