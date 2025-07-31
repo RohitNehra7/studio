@@ -9,9 +9,9 @@ export default function HomePage() {
   return (
     <div className="animate-in fade-in duration-500">
       <HeroSection />
+      <OurApproach />
       <StatsSection />
       <ServicesSection />
-      <OurApproach />
       <ContactCallToAction />
     </div>
   );
