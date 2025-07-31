@@ -36,7 +36,7 @@ export function OurApproach() {
                     Our philosophy is built on three core pillars that guide every project from concept to completion.
                 </p>
             </div>
-            <div className="relative h-[240vh]">
+            <div className="relative h-[300vh]">
                 {approaches.map((approach, index) => (
                     <div
                         key={index}
