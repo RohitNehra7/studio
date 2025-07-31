@@ -91,7 +91,7 @@ export default {
         },
         'zoom-in-out': {
           '0%, 100%': { transform: 'scale(1)' },
-          '50%': { transform: 'scale(1.15)' },
+          '50%': { transform: 'scale(1.05)' },
         }
       },
       animation: {
