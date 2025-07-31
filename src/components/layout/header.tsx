@@ -1,3 +1,4 @@
+
 "use client";
 
 import Link from "next/link";
@@ -5,18 +6,34 @@ import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
-import { Menu } from "lucide-react";
+import { Menu, ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { Logo } from "./logo";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
+
 
 const navLinks = [
-  { href: "/", label: "Home" },
-  { href: "/projects", label: "Projects" },
-  { href: "/services", label: "Services" },
-  { href: "/blog", label: "Blog" },
-  { href: "/about", label: "About Us" },
-  { href: "/contact", label: "Contact" },
+  { 
+    href: "/projects", 
+    label: "Projects",
+  },
+  { href: "/studio", label: "Studio" },
+  { href: "/journal", label: "Journal" },
+  { 
+    href: "/contact", 
+    label: "Contact",
+    isDropdown: true,
+    dropdownItems: [
+        { href: "/contact", label: "Contact Us" },
+        { href: "/careers", label: "Careers" },
+    ]
+  },
 ];
 
 export function Header() {
@@ -29,30 +46,53 @@ export function Header() {
       setHasScrolled(window.scrollY > 20);
     };
 
-    if (pathname === '/') {
-      window.addEventListener("scroll", handleScroll);
-      handleScroll();
-    } else {
-      setHasScrolled(true);
-    }
+    window.addEventListener("scroll", handleScroll);
+    handleScroll();
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [pathname]);
+  }, []);
 
-  const isHomePage = pathname === "/";
+  const NavLink = ({ href, label, className, isDropdown, dropdownItems }: { href: string; label: string; className?: string, isDropdown?: boolean, dropdownItems?: {href: string, label: string}[] }) => {
+    const isActive = pathname.startsWith(href);
 
-  const NavLink = ({ href, label, className }: { href: string; label: string; className?: string }) => {
-    const isActive = pathname === href;
+    if (isDropdown) {
+        return (
+            <DropdownMenu>
+                <DropdownMenuTrigger asChild>
+                    <Button
+                        variant="link"
+                        className={cn(
+                            "text-lg hover:text-primary hover:no-underline transition-colors duration-300",
+                            "text-foreground/80",
+                            isActive && "text-primary font-semibold",
+                            className
+                        )}
+                        >
+                        {label} <ChevronDown className="h-4 w-4 ml-1" />
+                    </Button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent>
+                    {dropdownItems?.map(item => (
+                         <DropdownMenuItem key={item.href} asChild>
+                            <Link href={item.href}>{item.label}</Link>
+                        </DropdownMenuItem>
+                    ))}
+                </DropdownMenuContent>
+            </DropdownMenu>
+        )
+    }
+
+
     return (
       <Link href={href} passHref>
         <Button
           variant="link"
           className={cn(
             "text-lg hover:text-primary hover:no-underline transition-colors duration-300",
-            isHomePage && !hasScrolled ? "text-white/80 hover:text-white" : "text-foreground/80",
-            isActive && (isHomePage && !hasScrolled ? "text-white font-semibold" : "text-primary font-semibold"),
+            "text-foreground/80",
+            isActive && "text-primary font-semibold",
             className
           )}
           onClick={() => setSheetOpen(false)}
@@ -65,14 +105,13 @@ export function Header() {
 
   return (
     <header className={cn(
-      "fixed top-0 z-50 w-full transition-all duration-300 ease-in-out",
-      !hasScrolled && isHomePage ? "bg-transparent" : "border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60"
+      "sticky top-0 z-50 w-full transition-all duration-300 ease-in-out border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60"
     )}>
       <div className="container mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" passHref>
           <Logo className={cn(
             "transition-colors",
-             !hasScrolled && isHomePage ? "text-white" : "text-foreground"
+            "text-foreground"
           )} />
         </Link>
         <nav className="hidden md:flex items-center gap-2">
@@ -81,14 +120,12 @@ export function Header() {
           ))}
         </nav>
         <div className="flex items-center gap-4">
-             <div className={cn(!hasScrolled && isHomePage ? "[&_#theme-toggle~*]:text-white" : "")}>
-              <ThemeToggle />
-            </div>
+            <ThemeToggle />
             <div className="md:hidden">
             <Sheet open={isSheetOpen} onOpenChange={setSheetOpen}>
                 <SheetTrigger asChild>
                 <Button variant="ghost" size="icon">
-                    <Menu className={cn("h-6 w-6", !hasScrolled && isHomePage ? "text-white" : "text-foreground")} />
+                    <Menu className={cn("h-6 w-6", "text-foreground")} />
                     <span className="sr-only">Open menu</span>
                 </Button>
                 </SheetTrigger>
