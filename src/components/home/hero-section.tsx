@@ -51,7 +51,7 @@ export function HeroSection() {
                             alt="The Archithan Architects Logo"
                             width={800}
                             height={800}
-                            className="w-full h-auto rounded-md"
+                            className="w-full h-auto rounded-md animate-zoom-in-out"
                             data-ai-hint="company logo"
                             priority
                         />
