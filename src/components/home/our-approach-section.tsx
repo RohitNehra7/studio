@@ -11,7 +11,7 @@ const approaches = [
         category: "Residential Expertise",
         title: "Elevate your living spaces",
         description: "We craft timeless homes where comfort, luxury, and sustainability converge, creating refined architectural solutions tailored to your unique lifestyle.",
-        imageSrc: "https://images.unsplash.com/photo-1593714604578-d9e41b00c6c6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx2aWxsYXxlbnwwfHx8fDE3NTM5OTU3MjR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+        imageSrc: "https://images.unsplash.com/photo-1464146072230-91cabc968266?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxN3x8aG91c2UlMjB8ZW58MHx8fHwxNzUzOTk1OTkzfDA&ixlib=rb-4.1.0&q=80&w=1080",
         imageHint: "villa"
     },
     {
