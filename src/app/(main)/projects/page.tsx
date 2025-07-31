@@ -77,7 +77,7 @@ const projects = [
     images: [
         { src: 'https://images.unsplash.com/photo-1583227564999-5221b6d1b8c2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzb2JlciUyMGFydCUyMGdhbGxlcnl8ZW58MHx8fHwxNzU0NzQxNDM0fDA&ixlib=rb-4.1.0&q=80&w=1080', hint: 'art gallery exterior' },
         { src: 'https://images.unsplash.com/photo-1564942250176-3f13ad454b1e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhcnQlMjBnYWxsZXJ5JTIwaW50ZXJpb3J8ZW58MHx8fHwxNzU0NjYyOTk5fDA&ixlib=rb-4.1.0&q=80&w=1080', hint: 'art gallery interior' },
-        { src: 'https://images.unsplash.com/photo-1578326238965-985f4103c0d8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhcnQlMjBleGhpYml0fGVufDB8fHx8fDE3NTQ2NjMwMDh8MA&ixlib=rb-4.1.0&q=80&w=1080', hint: 'art exhibit' },
+        { src: 'https://images.unsplash.com/photo-1578326238965-985f4103c0d8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhcnQlMjBleGhpYml0fGVufDB8fHx8fDE3NTQ2NjMwMDh8MA&ixlib.rb-4.1.0&q=80&w=1080', hint: 'art exhibit' },
     ],
     description: 'A sculptural space crafted to showcase art, where the architecture itself becomes part of the immersive cultural experience.',
     techStack: ['SketchUp', '3ds Max', 'Adobe Creative Suite']
@@ -87,9 +87,9 @@ const projects = [
     title: 'Lakeside Villa', 
     category: 'Residential', 
     images: [
-        { src: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjB2aWxsYXxlbnwwfHx8fHwxNzU0NjUyNTQ5fDA&ixlib=rb-4.1.0&q=80&w=1080', hint: 'luxury villa exterior' },
-        { src: 'https://images.unsplash.com/photo-1600585152225-358945c58469?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjB2aWxsYSUyMGludGVyaW9yfGVufDB8fHx8fDE3NTQ2NjMwMjB8MA&ixlib=rb-4.1.0&q=80&w=1080', hint: 'luxury villa interior' },
-        { src: 'https://images.unsplash.com/photo-1615571022219-eb45cf72d813?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBwb29sfGVufDB8fHx8fDE3NTQ2NjMwMjl8MA&ixlib=rb-4.1.0&q=80&w=1080', hint: 'luxury pool' },
+        { src: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjB2aWxsYXxlbnwwfHx8fHwxNzU0NjUyNTQ5fDA&ixlib.rb-4.1.0&q=80&w=1080', hint: 'luxury villa exterior' },
+        { src: 'https://images.unsplash.com/photo-1600585152225-358945c58469?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjB2aWxsYSUyMGludGVyaW9yfGVufDB8fHx8fDE3NTQ2NjMwMjB8MA&ixlib.rb-4.1.0&q=80&w=1080', hint: 'luxury villa interior' },
+        { src: 'https://images.unsplash.com/photo-1615571022219-eb45cf72d813?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBwb29sfGVufDB8fHx8fDE3NTQ2NjMwMjl8MA&ixlib.rb-4.1.0&q=80&w=1080', hint: 'luxury pool' },
     ],
     description: 'An exquisite villa offering breathtaking lake views, where luxury and nature converge in a seamless architectural expression.',
     techStack: ['AutoCAD', 'Enscape', 'Photoshop']
@@ -99,9 +99,9 @@ const projects = [
     title: 'Pinnacle Plaza', 
     category: 'Commercial', 
     images: [
-        { src: 'https://images.unsplash.com/photo-1580610447943-1bfbef54f4c6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBzaG9wcGluZyUyMG1hbGx8ZW58MHx8fHwxNzU0NzQxNDc5fDA&ixlib=rb-4.1.0&q=80&w=1080', hint: 'shopping mall exterior' },
-        { src: 'https://images.unsplash.com/photo-1555529771-835f59ee5020?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxzaG9wcGluZyUyMG1hbGwlMjBpbnRlcmlvcnxlbnwwfHx8fHwxNzU0NjYzMDQwfDA&ixlib=rb-4.1.0&q=80&w=1080', hint: 'shopping mall interior' },
-        { src: 'https://images.unsplash.com/photo-1567958451996-09b34355bf42?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxmb29kJTIwY291cnR8ZW58MHx8fHwxNzU0NjYzMDUwfDA&ixlib=rb-4.1.0&q=80&w=1080', hint: 'food court' },
+        { src: 'https://images.unsplash.com/photo-1580610447943-1bfbef54f4c6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBzaG9wcGluZyUyMG1hbGx8ZW58MHx8fHwxNzU0NzQxNDc5fDA&ixlib.rb-4.1.0&q=80&w=1080', hint: 'shopping mall exterior' },
+        { src: 'https://images.unsplash.com/photo-1555529771-835f59ee5020?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxzaG9wcGluZyUyMG1hbGwlMjBpbnRlcmlvcnxlbnwwfHx8fHwxNzU0NjYzMDQwfDA&ixlib.rb-4.1.0&q=80&w=1080', hint: 'shopping mall interior' },
+        { src: 'https://images.unsplash.com/photo-1567958451996-09b34355bf42?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxmb29kJTIwY291cnR8ZW58MHx8fHwxNzU0NjYzMDUwfDA&ixlib.rb-4.1.0&q=80&w=1080', hint: 'food court' },
     ],
     description: 'A premier shopping destination with a grand, light-filled atrium that creates an unforgettable retail experience.',
     techStack: ['Revit', '3ds Max', 'V-Ray']
@@ -157,7 +157,7 @@ export default function ProjectsPage() {
                       <CarouselContent>
                         {project.images.map((image, index) => (
                           <CarouselItem key={index}>
-                            <div className="aspect-[4/3] relative rounded-t-full overflow-hidden">
+                            <div className="aspect-[4/3] relative rounded-t-lg overflow-hidden">
                               <Image
                                 src={image.src}
                                 alt={`${project.title} - Image ${index + 1}`}
