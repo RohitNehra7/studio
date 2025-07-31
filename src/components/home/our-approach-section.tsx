@@ -32,7 +32,7 @@ const approaches = [
 
 export function OurApproach() {
     return (
-        <section className="relative bg-background text-foreground pt-16">
+        <section className="relative bg-background text-foreground pt-0">
             <div className="relative h-[270vh]">
                 {approaches.map((approach, index) => (
                     <div
