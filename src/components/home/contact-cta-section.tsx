@@ -7,7 +7,7 @@ export function ContactCallToAction() {
     return (
         <section className="py-16 md:py-24 bg-gradient-to-b from-card to-background">
             <div className="container mx-auto px-4 text-center">
-                <h2 className="font-headline text-3xl md:text-4xl text-primary mb-4">Let's Build Together</h2>
+                <h2 className="font-headline text-3xl md:text-4xl text-primary mb-4 font-bold">Let's Build Together</h2>
                 <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-12">
                     Have a project in mind or just want to learn more? We'd love to connect with you.
                 </p>

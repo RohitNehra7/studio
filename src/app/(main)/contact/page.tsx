@@ -17,7 +17,7 @@ export default function ContactPage() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           <div className="bg-card p-8 rounded-lg">
-            <h2 className="font-headline text-3xl text-primary mb-6">Get in Touch</h2>
+            <h2 className="font-headline text-3xl text-primary mb-6 font-bold">Get in Touch</h2>
             <div className="space-y-4">
               <a href="https://share.google/1DiYzQ8EmrLUqr54W" target="_blank" rel="noopener noreferrer" className="block p-4 rounded-lg transition-all duration-300 hover:bg-background/50 hover:shadow-md">
                 <div className="flex items-start gap-4">

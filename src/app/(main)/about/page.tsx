@@ -28,7 +28,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="font-headline text-3xl md:text-4xl text-primary mb-4">Our Story</h2>
+              <h2 className="font-headline text-3xl md:text-4xl text-primary mb-4 font-bold">Our Story</h2>
               <p className="text-muted-foreground mb-4">
                 Founded in 2010 by Aisha Shabeeh Shaheen, The Archithan Architects was born from a desire to merge timeless architectural principles with contemporary design innovation. What began as a small studio has grown into a renowned firm, known for its iconic structures and unwavering commitment to quality.
               </p>
@@ -130,7 +130,7 @@ export default function AboutPage() {
               />
             </div>
             <div className="md:col-span-2 text-center md:text-left">
-              <h2 className="font-headline text-3xl md:text-4xl text-primary mb-2">Meet Our Founder</h2>
+              <h2 className="font-headline text-3xl md:text-4xl text-primary mb-2 font-bold">Meet Our Founder</h2>
               <h3 className="font-headline text-2xl md:text-3xl text-foreground mb-4">Aisha Shabeeh Shaheen</h3>
               <p className="text-muted-foreground mb-4">
                 Aisha is an award-winning architect with over 20 years of experience in creating iconic and sustainable designs. Her work is celebrated for its poetic use of space, light, and material. She holds a Master's degree in Architecture from the prestigious International Design Institute and is a fellow of the Royal Architectural Society.

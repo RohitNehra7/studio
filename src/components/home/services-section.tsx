@@ -32,7 +32,7 @@ export function ServicesSection() {
     <section className="relative py-20 md:py-32 bg-background overflow-hidden">
       <div className="relative z-20 container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="font-headline text-3xl md:text-4xl text-primary mb-4">Our Expertise</h2>
+          <h2 className="font-headline text-3xl md:text-4xl text-primary mb-4 font-bold">Our Expertise</h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             We offer a comprehensive range of services, from initial design concepts to final project delivery.
           </p>
