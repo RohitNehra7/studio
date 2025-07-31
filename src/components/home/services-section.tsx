@@ -55,7 +55,7 @@ export function ServicesSection() {
         </div>
         
         <div className="text-center">
-            <Button size="lg" asChild className="bg-primary hover:bg-primary/90 text-primary-foreground transition-transform duration-300 hover:scale-105">
+            <Button size="lg" asChild>
                 <Link href="/services">
                     Explore All Services <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>

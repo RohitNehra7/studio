@@ -70,7 +70,7 @@ export default function ContactPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-6">See our latest projects, design inspiration, and behind-the-scenes content.</p>
-                <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground">
+                <Button asChild>
                   <a href="https://www.instagram.com/the_archithans" target="_blank" rel="noopener noreferrer">
                     @the_archithans <ArrowRight className="ml-2 h-4 w-4" />
                   </a>
@@ -86,7 +86,7 @@ export default function ContactPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-6">Watch project tours, design tutorials, and discussions on the future of architecture.</p>
-                <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground">
+                <Button asChild>
                   <a href="https://www.youtube.com/@thearchithanarchitects" target="_blank" rel="noopener noreferrer">
                     @thearchithanarchitects <ArrowRight className="ml-2 h-4 w-4" />
                   </a>

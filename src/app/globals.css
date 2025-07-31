@@ -79,4 +79,8 @@
       width: 100%;
     }
   }
+
+  .text-shadow {
+    text-shadow: 0 1px 0 hsl(var(--primary-foreground) / 0.2);
+  }
 }

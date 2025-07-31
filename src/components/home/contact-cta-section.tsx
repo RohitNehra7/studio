@@ -34,7 +34,7 @@ export function ContactCallToAction() {
                         <p className="text-muted-foreground">+91-8279891368</p>
                     </a>
                 </div>
-                <Button size="lg" asChild className="bg-primary hover:bg-primary/90 text-primary-foreground transition-transform duration-300 hover:scale-105">
+                <Button size="lg" asChild>
                     <Link href="/contact">
                         Get in Touch <ArrowRight className="ml-2 h-5 w-5" />
                     </Link>

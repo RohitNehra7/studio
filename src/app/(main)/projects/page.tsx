@@ -130,11 +130,6 @@ export default function ProjectsPage() {
               key={category}
               variant={filter === category ? 'default' : 'outline'}
               onClick={() => setFilter(category)}
-              className={`transition-all duration-300 ${
-                filter === category 
-                  ? 'bg-primary text-primary-foreground hover:bg-primary/90' 
-                  : 'border-primary text-primary hover:bg-primary/10'
-              }`}
             >
               {category}
             </Button>

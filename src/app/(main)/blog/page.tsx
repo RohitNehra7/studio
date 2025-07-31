@@ -12,7 +12,7 @@ const blogPosts = [
     title: 'The Rise of Sustainable Architecture',
     date: 'October 26, 2023',
     excerpt: 'Exploring how eco-friendly materials and design are shaping the future of our cities and homes. We delve into the latest innovations and how they contribute to a greener planet.',
-    image: 'https://images.unsplash.com/photo-1466678914828-09436531519a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxncmVlbiUyMGJ1aWxkaW5nfGVufDB8fHx8MTc1NDU4MTM2N3ww&ixlib=rb-4.1.0&q=80&w=1080',
+    image: 'https://images.unsplash.com/photo-1466678914828-09436531519a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxncmVlbiUyMGJ1aWxkaW5nfGVufDB8fHx8fDE3NTQ1ODEzNjd8MA&ixlib=rb-4.1.0&q=80&w=1080',
     hint: 'green building',
     tags: ['Sustainability', 'Innovation']
   },
@@ -57,7 +57,7 @@ const blogPosts = [
     title: 'The Future of Urban Planning',
     date: 'August 05, 2023',
     excerpt: 'What will our cities look like in 2050? We explore the trends shaping urban landscapes.',
-    image: 'https://images.unsplash.com/photo-1545431681-86a7479a8f22?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmdXR1cmUlMjBjaXR5fGVufDB8fHx8MTc1NDU4MTQyNnww&ixlib=rb-4.1.0&q=80&w=1080',
+    image: 'https://images.unsplash.com/photo-1545431681-86a7479a8f22?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmdXR1cmUlMjBjaXR5fGVufDB8fHx8fDE3NTQ1ODE0MjZ8MA&ixlib=rb-4.1.0&q=80&w=1080',
     hint: 'future city',
     tags: ['Urbanism', 'Innovation']
   },
@@ -104,7 +104,7 @@ export default function BlogPage() {
                 <p className="text-foreground/80 text-lg">{featuredPost.excerpt}</p>
             </CardContent>
             <CardFooter className="p-0 pt-8">
-                 <Button size="lg" asChild className="bg-primary hover:bg-primary/90 text-primary-foreground">
+                 <Button size="lg" asChild>
                     <Link href="#">
                     Read Full Story <ArrowRight className="ml-2 h-5 w-5" />
                     </Link>
