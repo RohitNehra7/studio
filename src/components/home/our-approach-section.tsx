@@ -33,7 +33,7 @@ const approaches = [
 export function OurApproach() {
     return (
         <section className="relative bg-background text-foreground pt-0">
-            <div className="relative h-[270vh]">
+            <div className="relative h-[300vh]">
                 {approaches.map((approach, index) => (
                     <div
                         key={index}
@@ -68,7 +68,7 @@ export function OurApproach() {
              <div className="bg-background text-center py-12 md:py-16">
                  <Button size="lg" asChild className="bg-primary hover:bg-primary/90 text-primary-foreground">
                     <Link href="/about">
-                        Learn More About Us <ArrowRight className="ml-2 h-5 w-5" />
+                        More About Us <ArrowRight className="ml-2 h-5 w-5" />
                     </Link>
                 </Button>
             </div>
