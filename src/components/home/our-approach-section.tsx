@@ -11,8 +11,8 @@ const approaches = [
     {
         title: "Aesthetic Elegance",
         description: "Fusing timeless beauty with functional design to create inspiring and livable spaces that stand the test of time.",
-        imageSrc: "https://images.unsplash.com/photo-1511311593843-0b7848b53948?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhcmNoaXRlY3R1cmUlMjBza2V0Y2h8ZW58MHx8fHwxNzU0NzQyNjA4fDA&ixlib=rb-4.1.0&q=80&w=1080",
-        imageHint: "architecture sketch",
+        imageSrc: "https://images.unsplash.com/photo-1530103043960-ef38714abb15?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhZXN0aGV0aWN8ZW58MHx8fHwxNzUzOTg2OTM0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+        imageHint: "aesthetic",
     },
     {
         title: "Innovative Solutions",
