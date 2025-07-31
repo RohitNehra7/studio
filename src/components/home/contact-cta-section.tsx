@@ -4,7 +4,7 @@ import { Mail, Phone, MapPin, ArrowRight } from "lucide-react";
 
 export function ContactCallToAction() {
     return (
-        <section className="py-20 md:py-32 bg-gradient-to-br from-card to-background">
+        <section className="py-20 md:py-32 bg-background">
             <div className="container mx-auto px-4 text-center">
                 <h2 className="font-headline text-3xl md:text-4xl text-primary mb-4">Let's Build Together</h2>
                 <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-12">
