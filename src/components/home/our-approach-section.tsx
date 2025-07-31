@@ -32,13 +32,7 @@ const approaches = [
 
 export function OurApproach() {
     return (
-        <section className="relative bg-background text-foreground">
-            <div className="text-center py-16 md:py-12">
-                <h2 className="font-headline text-3xl md:text-4xl text-primary mb-4">Our Approach to Excellence</h2>
-                <p className="text-lg text-muted-foreground max-w-3xl mx-auto px-4">
-                    Our philosophy is built on three core pillars that guide every project from concept to completion.
-                </p>
-            </div>
+        <section className="relative bg-background text-foreground pt-16">
             <div className="relative h-[270vh]">
                 {approaches.map((approach, index) => (
                     <div
