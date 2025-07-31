@@ -1,6 +1,8 @@
 
-import { ContactForm } from '@/components/contact-form';
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, Phone, MapPin, Instagram, Youtube, ArrowRight } from 'lucide-react';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 
 export default function ContactPage() {
   return (
@@ -58,9 +60,39 @@ export default function ContactPage() {
               </a>
             </div>
           </div>
-          <div className="bg-card p-8 rounded-lg">
-             <h2 className="font-headline text-3xl text-primary mb-6">Send a Message</h2>
-            <ContactForm />
+          <div className="space-y-8">
+            <Card className="bg-card p-8 rounded-lg text-center">
+              <CardHeader>
+                <div className="mx-auto bg-primary/10 text-primary p-4 rounded-full w-fit mb-4">
+                  <Instagram className="h-10 w-10" />
+                </div>
+                <CardTitle className="font-headline text-3xl text-primary">Follow us on Instagram</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground mb-6">See our latest projects, design inspiration, and behind-the-scenes content.</p>
+                <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground">
+                  <a href="https://www.instagram.com/the_archithans" target="_blank" rel="noopener noreferrer">
+                    @the_archithans <ArrowRight className="ml-2 h-4 w-4" />
+                  </a>
+                </Button>
+              </CardContent>
+            </Card>
+            <Card className="bg-card p-8 rounded-lg text-center">
+              <CardHeader>
+                 <div className="mx-auto bg-primary/10 text-primary p-4 rounded-full w-fit mb-4">
+                  <Youtube className="h-10 w-10" />
+                </div>
+                <CardTitle className="font-headline text-3xl text-primary">Subscribe on YouTube</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground mb-6">Watch project tours, design tutorials, and discussions on the future of architecture.</p>
+                <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground">
+                  <a href="https://www.youtube.com/@thearchithanarchitects" target="_blank" rel="noopener noreferrer">
+                    @thearchithanarchitects <ArrowRight className="ml-2 h-4 w-4" />
+                  </a>
+                </Button>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </div>
