@@ -1,48 +1,58 @@
 
+"use client";
+
 import Image from "next/image";
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
-import { Zap, Gem, Palette } from "lucide-react";
+
+const approaches = [
+    {
+        title: "Aesthetic Elegance",
+        description: "Fusing timeless beauty with functional design to create inspiring and livable spaces.",
+        imageSrc: "https://images.unsplash.com/photo-1511311593843-0b7848b53948?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhcmNoaXRlY3R1cmUlMjBza2V0Y2h8ZW58MHx8fHwxNzU0NzQyNjA4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+        imageHint: "architecture sketch",
+    },
+    {
+        title: "Innovative Solutions",
+        description: "Leveraging cutting-edge technology to redefine what's possible in modern architecture.",
+        imageSrc: "https://images.unsplash.com/photo-1554469384-e52fac86944b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBidWlsZGluZyUyMG1vZGVsfGVufDB8fHx8fDE3NTQ3NDI2MjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+        imageHint: "modern building model",
+    },
+    {
+        title: "Uncompromising Quality",
+        description: "Committed to the highest standards of craftsmanship from concept to completion.",
+        imageSrc: "https://images.unsplash.com/photo-1428908728789-d2de25dbd4e2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxlbmdpbmVlciUyMHBsYW5zfGVufDB8fHx8fDE3NTQ3NDI2MzR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+        imageHint: "engineer plans",
+    }
+];
 
 export function OurApproach() {
     return (
-        <section className="relative py-16 md:py-24 bg-card overflow-hidden">
-            <div className="relative z-20 container mx-auto px-4 max-w-4xl text-center">
-                <h2 className="font-headline text-3xl md:text-4xl text-primary mb-12">Our Approach to Excellence</h2>
-                <div className="grid md:grid-cols-3 gap-8 mb-12">
-                    <div className="flex flex-col items-center gap-4 p-6 rounded-lg transition-all duration-300 hover:bg-background/50 hover:shadow-xl hover:scale-105">
-                        <div className="bg-primary/10 text-primary p-4 rounded-full transition-transform duration-300 group-hover:scale-110">
-                            <Palette className="h-8 w-8" />
-                        </div>
-                        <div>
-                            <h3 className="text-xl font-semibold text-foreground mb-2">Aesthetic Elegance</h3>
-                            <p className="text-muted-foreground">Fusing timeless beauty with functional design to create inspiring and livable spaces.</p>
-                        </div>
-                    </div>
-                    <div className="flex flex-col items-center gap-4 p-6 rounded-lg transition-all duration-300 hover:bg-background/50 hover:shadow-xl hover:scale-105">
-                        <div className="bg-primary/10 text-primary p-4 rounded-full transition-transform duration-300 group-hover:scale-110">
-                            <Zap className="h-8 w-8" />
-                        </div>
-                        <div>
-                            <h3 className="text-xl font-semibold text-foreground mb-2">Innovative Solutions</h3>
-                            <p className="text-muted-foreground">Leveraging cutting-edge technology to redefine what's possible in modern architecture.</p>
-                        </div>
-                    </div>
-                     <div className="flex flex-col items-center gap-4 p-6 rounded-lg transition-all duration-300 hover:bg-background/50 hover:shadow-xl hover:scale-105">
-                        <div className="bg-primary/10 text-primary p-4 rounded-full transition-transform duration-300 group-hover:scale-110">
-                            <Gem className="h-8 w-8" />
-                        </div>
-                        <div>
-                            <h3 className="text-xl font-semibold text-foreground mb-2">Uncompromising Quality</h3>
-                            <p className="text-muted-foreground">Committed to the highest standards of craftsmanship from concept to completion.</p>
+        <section className="relative bg-background">
+            <div className="text-center py-16 md:py-24">
+                 <h2 className="font-headline text-3xl md:text-4xl text-primary mb-4">Our Approach to Excellence</h2>
+                 <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+                    Our philosophy is built on three core pillars that guide every project from concept to completion.
+                </p>
+            </div>
+            <div className="relative h-[300vh]">
+                {approaches.map((approach, index) => (
+                    <div key={index} style={{ zIndex: index + 1 }} className="sticky top-0 h-screen w-full">
+                        <div className="relative h-full w-full flex items-center justify-center">
+                            <Image
+                                src={approach.imageSrc}
+                                alt={approach.title}
+                                layout="fill"
+                                objectFit="cover"
+                                className="z-0"
+                                data-ai-hint={approach.imageHint}
+                            />
+                            <div className="absolute inset-0 bg-black/60 z-10" />
+                            <div className="relative z-20 text-center text-white p-8 max-w-3xl">
+                                <h3 className="font-headline text-4xl md:text-6xl text-primary mb-4">{approach.title}</h3>
+                                <p className="text-lg md:text-2xl text-white/90">{approach.description}</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div>
-                    <Button variant="outline" asChild className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-transform duration-300 hover:scale-105">
-                        <Link href="/about">Learn More About Us</Link>
-                    </Button>
-                </div>
+                ))}
             </div>
         </section>
     );
