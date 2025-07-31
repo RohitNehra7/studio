@@ -45,7 +45,7 @@ export function OurApproach() {
                     Our philosophy is built on three core pillars that guide every project from concept to completion.
                 </p>
             </div>
-            <div className="relative h-[300vh]">
+            <div className="relative h-[270vh]">
                 {approaches.map((approach, index) => (
                     <div
                         key={index}
@@ -57,14 +57,14 @@ export function OurApproach() {
                             whileInView={{ opacity: 1, y: 0, scale: 1 }}
                             viewport={{ once: true, amount: 0.3 }}
                             transition={{ duration: 0.6, ease: "easeOut" }}
-                            className="bg-card rounded-2xl shadow-2xl w-full max-w-4xl h-full max-h-[80vh] flex flex-col p-6 md:p-8 overflow-hidden border border-border/10"
+                            className="bg-card rounded-2xl shadow-2xl w-full max-w-4xl h-full max-h-[80vh] flex flex-col p-4 md:p-6 overflow-hidden border border-border/10"
                         >
-                            <div className="text-left mb-6">
+                            <div className="text-left mb-4">
                                 <p className="text-sm font-semibold uppercase tracking-widest text-primary mb-2">{approach.category}</p>
-                                <h3 className="font-headline text-3xl md:text-4xl font-bold text-foreground mb-3">{approach.title}</h3>
+                                <h3 className="font-headline text-3xl md:text-4xl font-bold text-foreground mb-2">{approach.title}</h3>
                                 <p className="text-base md:text-lg text-muted-foreground">{approach.description}</p>
                             </div>
-                            <div className="mt-6 mb-4">
+                            <div className="mt-auto mb-4">
                                 <Button size="lg" asChild className="bg-primary hover:bg-primary/90 text-primary-foreground">
                                     <Link href={approach.buttonLink}>
                                         {approach.buttonText} <ArrowRight className="ml-2 h-5 w-5" />
