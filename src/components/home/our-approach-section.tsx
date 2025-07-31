@@ -1,4 +1,3 @@
-
 "use client";
 
 import Image from "next/image";
@@ -17,8 +16,8 @@ const approaches = [
     {
         title: "Innovative Solutions",
         description: "Leveraging cutting-edge technology and materials to redefine what's possible in modern architecture.",
-        imageSrc: "https://images.unsplash.com/photo-1554469384-e52fac86944b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBidWlsZGluZyUyMG1vZGVsfGVufDB8fHx8fDE3NTQ3NDI2MjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-        imageHint: "modern building model",
+        imageSrc: "https://images.unsplash.com/photo-1615823438594-18b7bb699aeb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxpbm5vdmF0aXZlfGVufDB8fHx8MTc1Mzk4Njk4OXww&ixlib=rb-4.1.0&q=80&w=1080",
+        imageHint: "innovative",
     },
     {
         title: "Uncompromising Quality",
