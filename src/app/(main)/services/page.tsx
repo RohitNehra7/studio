@@ -140,7 +140,7 @@ export default function ServicesPage() {
         {serviceGroups.map((group, groupIndex) => (
           <div key={groupIndex} className="mb-16 md:mb-24">
             <div className="text-center mb-12">
-              <h3 className="font-headline text-2xl md:text-3xl text-primary mb-3">{group.category}</h3>
+              <h3 className="font-headline text-2xl md:text-3xl text-primary mb-3 font-bold">{group.category}</h3>
               <p className="text-md text-muted-foreground max-w-2xl mx-auto">{group.description}</p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
