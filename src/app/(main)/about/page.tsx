@@ -23,33 +23,6 @@ export default function AboutPage() {
         </div>
       </header>
       
-      <section className="py-16 md:py-24 bg-background">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-          <div className="grid md:grid-cols-3 gap-12 items-center">
-            <div className="md:col-span-1 rounded-full overflow-hidden w-64 h-64 md:w-80 md:h-80 mx-auto shadow-2xl border-4 border-primary">
-              <Image
-                src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjB3b21hbnxlbnwwfHx8fDE3NTQ1ODMxOTJ8MA&ixlib=rb-4.1.0&q=80&w=1080"
-                alt="Aisha Shabeeh Shaheen"
-                width={400}
-                height={400}
-                className="w-full h-full object-cover"
-                data-ai-hint="professional woman"
-              />
-            </div>
-            <div className="md:col-span-2 text-center md:text-left">
-              <h2 className="font-headline text-3xl md:text-4xl text-primary mb-2 font-bold">Meet Our Founder</h2>
-              <h3 className="font-headline text-2xl md:text-3xl text-foreground mb-4">Aisha Shabeeh Shaheen</h3>
-              <p className="text-muted-foreground mb-4">
-                Aisha is an award-winning architect with over 20 years of experience in creating iconic and sustainable designs. Her work is celebrated for its poetic use of space, light, and material. She holds a Master's degree in Architecture from the prestigious International Design Institute and is a fellow of the Royal Architectural Society.
-              </p>
-              <p className="text-muted-foreground">
-                Her vision for The Archithan Architects is to create a legacy of architecture that is not only visually stunning but also deeply connected to its environment and the people who inhabit it.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section className="py-16 md:py-24 bg-card">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="grid md:grid-cols-2 gap-12 items-center">
