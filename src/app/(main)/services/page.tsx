@@ -1,4 +1,6 @@
 
+'use client';
+
 import {
   DraftingCompass,
   Sofa,
@@ -18,6 +20,7 @@ import {
   CheckCircle,
 } from "lucide-react";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
+import { motion } from "framer-motion";
 
 const serviceGroups = [
   {
@@ -127,6 +130,21 @@ const serviceGroups = [
 ];
 
 export default function ServicesPage() {
+  const cardVariants = {
+    hidden: (index: number) => ({
+      opacity: 0,
+      x: index % 2 === 0 ? -50 : 50,
+    }),
+    visible: (index: number) => ({
+      opacity: 1,
+      x: 0,
+      transition: {
+        delay: index * 0.1,
+        duration: 0.5,
+      },
+    }),
+  };
+
   return (
     <div className="animate-in fade-in duration-500">
       <header className="text-center py-16 md:py-24 bg-gradient-to-b from-card to-background">
@@ -145,17 +163,26 @@ export default function ServicesPage() {
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
               {group.items.map((service, index) => (
-                <Card key={index} className="bg-card text-center flex flex-col items-center p-6 transition-all duration-300 hover:shadow-2xl hover:border-primary hover:-translate-y-2">
-                  <CardHeader className="p-0 pb-4">
-                    <div className="mx-auto bg-primary/10 text-primary p-4 rounded-full w-fit mb-4">
-                      {service.icon}
-                    </div>
-                    <CardTitle className="font-headline text-xl text-primary">{service.title}</CardTitle>
-                  </CardHeader>
-                  <CardContent className="p-0 flex-grow">
-                    <p className="text-muted-foreground text-sm">{service.description}</p>
-                  </CardContent>
-                </Card>
+                 <motion.div
+                  key={index}
+                  custom={index}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true, amount: 0.3 }}
+                  variants={cardVariants}
+                >
+                  <Card className="bg-card text-center flex flex-col items-center p-6 transition-all duration-300 hover:shadow-2xl hover:border-primary hover:-translate-y-2 h-full">
+                    <CardHeader className="p-0 pb-4">
+                      <div className="mx-auto bg-primary/10 text-primary p-4 rounded-full w-fit mb-4">
+                        {service.icon}
+                      </div>
+                      <CardTitle className="font-headline text-xl text-primary">{service.title}</CardTitle>
+                    </CardHeader>
+                    <CardContent className="p-0 flex-grow">
+                      <p className="text-muted-foreground text-sm">{service.description}</p>
+                    </CardContent>
+                  </Card>
+                </motion.div>
               ))}
             </div>
           </div>
