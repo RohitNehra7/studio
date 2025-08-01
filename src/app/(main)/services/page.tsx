@@ -129,7 +129,7 @@ const serviceGroups = [
   },
 ];
 
-export default function ServicesPage() {
+export default function ServicesPage({ searchParams }: { searchParams: { [key: string]: string | string[] | undefined } }) {
   const getCardVariants = (index: number) => ({
     hidden: {
       opacity: 0,
