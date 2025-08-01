@@ -21,6 +21,7 @@ import {
 } from "lucide-react";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const serviceGroups = [
   {
@@ -147,11 +148,21 @@ export default function ServicesPage({ searchParams }: { searchParams: { [key: s
 
   return (
     <div className="animate-in fade-in duration-500">
-      <header className="text-center py-16 md:py-24 bg-gradient-to-b from-card to-background">
-        <h1 className="font-headline text-4xl md:text-5xl font-bold text-primary">Our Services</h1>
-        <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto">
-          From initial concept to final construction, we offer a complete suite of services to bring your vision to life with precision and passion.
-        </p>
+      <header className="relative text-center py-16 md:py-24 bg-card">
+         <Image
+            src="/logo.jpeg"
+            alt="The Archithan Architects Logo"
+            fill
+            className="object-cover"
+            data-ai-hint="company logo"
+          />
+         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-background/20 z-10" />
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
+            <h1 className="font-headline text-4xl md:text-5xl font-bold text-primary">Our Services</h1>
+            <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto">
+            From initial concept to final construction, we offer a complete suite of services to bring your vision to life with precision and passion.
+            </p>
+        </div>
       </header>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
