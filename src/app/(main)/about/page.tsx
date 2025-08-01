@@ -55,13 +55,6 @@ export default function AboutPage() {
   return (
     <div className="animate-in fade-in duration-500">
       <header className="relative py-24 md:py-40 text-center text-white bg-card">
-         <Image
-            src="/logo.jpeg"
-            alt="The Archithan Architects Logo"
-            fill
-            className="object-cover"
-            data-ai-hint="company logo"
-          />
          <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-background/20 z-10" />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
           
