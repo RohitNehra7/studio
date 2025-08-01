@@ -130,20 +130,20 @@ const serviceGroups = [
 ];
 
 export default function ServicesPage() {
-  const cardVariants = {
-    hidden: (index: number) => ({
+  const getCardVariants = (index: number) => ({
+    hidden: {
       opacity: 0,
       x: index % 2 === 0 ? -50 : 50,
-    }),
-    visible: (index: number) => ({
+    },
+    visible: {
       opacity: 1,
       x: 0,
       transition: {
         delay: index * 0.1,
         duration: 0.5,
       },
-    }),
-  };
+    },
+  });
 
   return (
     <div className="animate-in fade-in duration-500">
@@ -165,11 +165,10 @@ export default function ServicesPage() {
               {group.items.map((service, index) => (
                  <motion.div
                   key={index}
-                  custom={index}
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true, amount: 0.3 }}
-                  variants={cardVariants}
+                  variants={getCardVariants(index)}
                 >
                   <Card className="bg-card text-center flex flex-col items-center p-6 transition-all duration-300 hover:shadow-2xl hover:border-primary hover:-translate-y-2 h-full">
                     <CardHeader className="p-0 pb-4">
