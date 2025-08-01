@@ -1,9 +1,57 @@
 
+'use client';
+
 import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Award, Heart, Leaf, Star, Rocket } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 export default function AboutPage() {
+
+  const cardVariants = {
+    hidden: (index: number) => ({
+      opacity: 0,
+      x: index % 2 === 0 ? -50 : 50,
+    }),
+    visible: (index: number) => ({
+      opacity: 1,
+      x: 0,
+      transition: {
+        delay: index * 0.1,
+        duration: 0.5,
+      },
+    }),
+  };
+
+  const coreValues = [
+    {
+      icon: <Award className="h-8 w-8" />,
+      title: 'Design Excellence',
+      description: 'We create timeless, functional, and aesthetic spaces that reflect creativity, precision, and purpose.',
+    },
+    {
+      icon: <Heart className="h-8 w-8" />,
+      title: 'Client-Centric Approach',
+      description: 'We design with empathy, listening deeply to every client’s vision and delivering tailored, meaningful solutions.',
+    },
+    {
+      icon: <Leaf className="h-8 w-8" />,
+      title: 'Sustainability',
+      description: 'We integrate environmentally responsible practices and materials to build spaces that respect the planet.',
+    },
+    {
+      icon: <Star className="h-8 w-8" />,
+      title: 'Integrity & Transparency',
+      description: 'We value honesty, fairness, and clear communication in every relationship — from concept to construction.',
+    },
+    {
+      icon: <Rocket className="h-8 w-8" />,
+      title: 'Innovation & Adaptability',
+      description: 'We embrace bold ideas, emerging technologies, and ever-changing needs to shape the future of architecture.',
+    },
+  ];
+
+
   return (
     <div className="animate-in fade-in duration-500">
       <header className="relative py-24 md:py-40 text-center text-white bg-card">
@@ -56,61 +104,29 @@ export default function AboutPage() {
             <p className="mt-3 text-lg text-muted-foreground">The principles that guide our work and define our character.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
-            <Card className="text-center bg-card/50">
-              <CardHeader>
-                <div className="mx-auto bg-primary/10 text-primary p-3 rounded-full w-fit">
-                    <Award className="h-8 w-8"/>
-                </div>
-                <CardTitle className="font-headline text-2xl pt-4">Design Excellence</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">We create timeless, functional, and aesthetic spaces that reflect creativity, precision, and purpose.</p>
-              </CardContent>
-            </Card>
-             <Card className="text-center bg-card/50">
-              <CardHeader>
-                <div className="mx-auto bg-primary/10 text-primary p-3 rounded-full w-fit">
-                    <Heart className="h-8 w-8"/>
-                </div>
-                <CardTitle className="font-headline text-2xl pt-4">Client-Centric Approach</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">We design with empathy, listening deeply to every client’s vision and delivering tailored, meaningful solutions.</p>
-              </CardContent>
-            </Card>
-             <Card className="text-center bg-card/50">
-              <CardHeader>
-                <div className="mx-auto bg-primary/10 text-primary p-3 rounded-full w-fit">
-                    <Leaf className="h-8 w-8"/>
-                </div>
-                <CardTitle className="font-headline text-2xl pt-4">Sustainability</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">We integrate environmentally responsible practices and materials to build spaces that respect the planet.</p>
-              </CardContent>
-            </Card>
-            <Card className="text-center bg-card/50 md:col-start-1 lg:col-start-auto">
-              <CardHeader>
-                <div className="mx-auto bg-primary/10 text-primary p-3 rounded-full w-fit">
-                    <Star className="h-8 w-8"/>
-                </div>
-                <CardTitle className="font-headline text-2xl pt-4">Integrity & Transparency</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">We value honesty, fairness, and clear communication in every relationship — from concept to construction.</p>
-              </CardContent>
-            </Card>
-            <Card className="text-center bg-card/50">
-              <CardHeader>
-                <div className="mx-auto bg-primary/10 text-primary p-3 rounded-full w-fit">
-                    <Rocket className="h-8 w-8"/>
-                </div>
-                <CardTitle className="font-headline text-2xl pt-4">Innovation & Adaptability</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">We embrace bold ideas, emerging technologies, and ever-changing needs to shape the future of architecture.</p>
-              </CardContent>
-            </Card>
+            {coreValues.map((value, index) => (
+               <motion.div
+                key={index}
+                custom={index}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.3 }}
+                variants={cardVariants}
+                className="h-full"
+              >
+                <Card className="text-center bg-gradient-to-br from-card to-card/60 h-full transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 hover:border-primary border-transparent border">
+                  <CardHeader>
+                    <div className="mx-auto bg-primary/10 text-primary p-3 rounded-full w-fit">
+                        {value.icon}
+                    </div>
+                    <CardTitle className="font-headline text-2xl pt-4">{value.title}</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-muted-foreground">{value.description}</p>
+                  </CardContent>
+                </Card>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>
