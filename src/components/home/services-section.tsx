@@ -43,7 +43,7 @@ export function ServicesSection() {
   };
 
   return (
-    <section className="relative py-20 md:py-32 bg-background overflow-hidden">
+    <section className="relative py-16 md:py-24 bg-background overflow-hidden">
       <div className="relative z-20 container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="font-headline text-3xl md:text-4xl text-primary mb-4 font-bold">Our Expertise</h2>
