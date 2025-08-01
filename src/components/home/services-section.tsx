@@ -1,8 +1,11 @@
 
+"use client";
+
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Link from 'next/link';
 import { DraftingCompass, HardHat, Scaling, View, ArrowRight } from "lucide-react";
+import { motion } from "framer-motion";
 
 const serviceCategories = [
   {
@@ -28,6 +31,17 @@ const serviceCategories = [
 ];
 
 export function ServicesSection() {
+  const cardVariants = {
+    hidden: (index: number) => ({
+      opacity: 0,
+      x: index % 2 === 0 ? -50 : 50,
+    }),
+    visible: {
+      opacity: 1,
+      x: 0,
+    },
+  };
+
   return (
     <section className="relative py-20 md:py-32 bg-background overflow-hidden">
       <div className="relative z-20 container mx-auto px-4">
@@ -40,17 +54,27 @@ export function ServicesSection() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           {serviceCategories.map((category, index) => (
-            <Card key={index} className="bg-card/50 text-center flex flex-col items-center p-8 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 hover:border-primary border-transparent border bg-gradient-to-br from-card to-card/60">
-              <CardHeader className="p-0 flex-shrink-0">
-                <div className="mx-auto bg-primary/10 text-primary p-5 rounded-full w-fit mb-6">
-                  {category.icon}
-                </div>
-                <CardTitle className="font-headline text-2xl text-primary">{category.title}</CardTitle>
-              </CardHeader>
-              <CardContent className="p-0 pt-4 flex-grow flex items-center">
-                 <p className="text-muted-foreground text-sm">{category.description}</p>
-              </CardContent>
-            </Card>
+            <motion.div
+              key={index}
+              custom={index}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.3 }}
+              variants={cardVariants}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+            >
+              <Card className="bg-card/50 text-center flex flex-col items-center p-8 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 hover:border-primary border-transparent border bg-gradient-to-br from-card to-card/60 h-full">
+                <CardHeader className="p-0 flex-shrink-0">
+                  <div className="mx-auto bg-primary/10 text-primary p-5 rounded-full w-fit mb-6">
+                    {category.icon}
+                  </div>
+                  <CardTitle className="font-headline text-2xl text-primary">{category.title}</CardTitle>
+                </CardHeader>
+                <CardContent className="p-0 pt-4 flex-grow flex items-center">
+                  <p className="text-muted-foreground text-sm">{category.description}</p>
+                </CardContent>
+              </Card>
+            </motion.div>
           ))}
         </div>
         
