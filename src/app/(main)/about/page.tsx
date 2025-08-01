@@ -16,7 +16,7 @@ export default function AboutPage() {
           />
          <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-background/20 z-10" />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
-          <h1 className="font-headline text-4xl md:text-6xl font-bold text-primary">About The Archithan Architects</h1>
+          
           <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-foreground/90">
             We are a team of passionate architects and designers committed to creating spaces that enrich lives.
           </p>
