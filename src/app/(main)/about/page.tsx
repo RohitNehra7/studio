@@ -80,12 +80,12 @@ export default function AboutPage() {
             </div>
             <div className="rounded-lg overflow-hidden shadow-lg">
                 <Image
-                    src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0ZWFtJTIwbWVldGluZ3xlbnwwfHx8fDE3NTQ1ODMxODJ8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                    src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx3b3JraW5nfGVufDB8fHx8MTc1NDA3ODkyM3ww&ixlib=rb-4.1.0&q=80&w=1080"
                     alt="Architectural team collaboration"
                     width={800}
                     height={600}
                     className="w-full h-full object-cover"
-                    data-ai-hint="team meeting"
+                    data-ai-hint="creative workspace"
                 />
             </div>
           </div>
