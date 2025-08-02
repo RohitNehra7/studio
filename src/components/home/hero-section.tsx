@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Gem, RefreshCw, Heart, ArrowRight } from "lucide-react";
+import logo from '@/assets/homepage/logo.jpeg'
 
 export function HeroSection() {
     return (
@@ -47,7 +48,7 @@ export function HeroSection() {
                  <div className="animate-in fade-in slide-in-from-right duration-700 order-1 lg:order-2">
                     <div className="bg-card p-4 rounded-lg shadow-2xl max-w-md mx-auto lg:max-w-full">
                         <Image
-                            src="/logo.jpeg"
+                            src={logo}
                             alt="The Archithan Architects Logo"
                             width={800}
                             height={800}

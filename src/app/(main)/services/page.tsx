@@ -22,6 +22,7 @@ import {
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import logo from '@/assets/homepage/logo.jpeg'
 
 const serviceGroups = [
   {
@@ -150,7 +151,7 @@ export default function ServicesPage({ searchParams }: { searchParams: { [key: s
     <div className="animate-in fade-in duration-500">
       <header className="relative text-center py-16 md:py-24 bg-card">
          <Image
-            src="/logo.jpeg"
+            src={logo}
             alt="The Archithan Architects Logo"
             fill
             className="object-cover"
