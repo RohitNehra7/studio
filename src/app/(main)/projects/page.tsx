@@ -28,7 +28,7 @@ const categories = ['All', 'Residential', 'Commercial', 'Institutional'];
 
 export default function ProjectsPage() {
   const [filter, setFilter] = useState('All');
-  const filteredProjects = filter === 'All' ? projects : projects.filter(p => p.category === filter);
+  const filteredProjects = projects.filter(p => filter === 'All' || p.category === filter);
 
   return (
     <div className="animate-in fade-in duration-500">
