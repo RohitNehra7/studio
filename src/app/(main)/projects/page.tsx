@@ -15,9 +15,9 @@ const projects = [
     title: 'Serenity House', 
     category: 'Residential', 
     images: [
-      { src: 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBob3VzZXxlbnwwfHx8fDE3NTQ2NTI1MDV8MA&ixlib=rb-4.1.0&q=80&w=1080', hint: 'modern house exterior' },
-      { src: 'https://images.unsplash.com/photo-1613553423758-d8713b1b6d7f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjBob3VzZSUyMGludGVyaW9yfGVufDB8fHx8fDE3NTQ2NjI4NzZ8MA&ixlib=rb-4.1.0&q=80&w=1080', hint: 'modern house interior' },
-      { src: 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBsaXZpbmclMjByb29tfGVufDB8fHx8fDE3NTQ2NjI4ODZ8MA&ixlib=rb-4.1.0&q=80&w=1080', hint: 'modern living room' },
+      { src: '/projects/residential-1.jpg', hint: 'modern house exterior' },
+      { src: '/projects/residential-1-interior-1.jpg', hint: 'modern house interior' },
+      { src: '/projects/residential-1-interior-2.jpg', hint: 'modern living room' },
     ],
     description: 'A masterpiece of modern residential design, this home balances sharp lines with natural materials to create a peaceful and welcoming environment. The open-plan living spaces are flooded with natural light, seamlessly connecting the interior with the surrounding landscape. Every detail, from the custom cabinetry to the curated art, is a testament to bespoke luxury and thoughtful design.',
     techStack: ['AutoCAD', 'SketchUp', 'V-Ray', 'Sustainable Materials']
@@ -27,9 +27,9 @@ const projects = [
     title: 'Quantum Tower', 
     category: 'Commercial', 
     images: [
-      { src: 'https://images.unsplash.com/photo-1422442468333-3a7a1b3c43f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmdXR1cmlzdGljJTIwc2t5c2NyYXBlcnxlbnwwfHx8fDE3NTQ3NDEzNTJ8MA&ixlib=rb-4.1.0&q=80&w=1080', hint: 'skyscraper exterior' },
-      { src: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxvZmZpY2UlMjBsb2JieXxlbnwwfHx8fDE3NTQ2NjI5MTZ8MA&ixlib=rb-4.1.0&q=80&w=1080', hint: 'office lobby' },
-      { src: 'https://images.unsplash.com/photo-1552664730-d307ca884978?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBvZmZpY2V8ZW58MHx8fHwxNzU0NjYyOTI4fDA&ixlib=rb-4.1.0&q=80&w=1080', hint: 'modern office' },
+      { src: '/projects/commercial-1.jpg', hint: 'skyscraper exterior' },
+      { src: '/projects/commercial-1-interior-1.jpg', hint: 'office lobby' },
+      { src: '/projects/commercial-1-interior-2.jpg', hint: 'modern office' },
     ],
     description: 'A cutting-edge high-rise that redefines the city skyline. Quantum Tower features a double-skin facade for energy efficiency and a sky garden on every tenth floor, offering a new era of business with a focus on employee well-being and sustainable operation. Its dynamic form is both an architectural statement and a functional masterpiece.',
     techStack: ['Revit', 'BIM 360', 'Dynamo', 'LEED Certified']
@@ -39,9 +39,9 @@ const projects = [
     title: 'Civic Knowledge Center', 
     category: 'Institutional', 
     images: [
-        { src: 'https://images.unsplash.com/photo-1521587760476-6c12a4b040da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwdWJsaWMlMjBsaWJyYXJ5fGVufDB8fHx8fDE3NTQ2NTI1MjB8MA&ixlib=rb-4.1.0&q=80&w=1080', hint: 'public library exterior' },
-        { src: 'https://images.unsplash.com/photo-1543269865-cbf427effbad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsaWJyYXJ5JTIwaW50ZXJpb3J8ZW58MHx8fHwxNzU0NjYyOTQyfDA&ixlib=rb-4.1.0&q=80&w=1080', hint: 'library interior' },
-        { src: 'https://images.unsplash.com/photo-1533679843659-b13a5816d9a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyZWFkaW5nJTIwYXJlYXxlbnwwfHx8fDE3NTQ2NjI5NTB8MA&ixlib=rb-4.1.0&q=80&w=1080', hint: 'reading area' },
+        { src: '/projects/institutional-1.jpg', hint: 'public library exterior' },
+        { src: '/projects/institutional-1-interior-1.jpg', hint: 'library interior' },
+        { src: '/projects/institutional-1-interior-2.jpg', hint: 'reading area' },
     ],
     description: 'A dynamic hub for learning and community engagement. The design features a grand central atrium that connects all floors, encouraging interaction and discovery. With flexible layouts, digital labs, and quiet reading nooks, it is a space designed to inspire and adapt to the evolving needs of its community.',
     techStack: ['ArchiCAD', 'Rhino', 'Grasshopper', 'Community-Centric Design']
@@ -51,9 +51,9 @@ const projects = [
     title: 'The Urban Oasis', 
     category: 'Residential', 
     images: [
-        { src: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhcGFydG1lbnQlMjBidWlsZGluZ3xlbnwwfHx8fDE3NTQ2NTI1Mjd8MA&ixlib=rb-4.1.0&q=80&w=1080', hint: 'apartment building' },
-        { src: 'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBhcGFydG1lbnQlMjBpbnRlcmlvcnxlbnwwfHx8fDE3NTQ2NjI5NjF8MA&ixlib=rb-4.1.0&q=80&w=1080', hint: 'modern apartment interior' },
-        { src: 'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjBhcGFydG1lbnQlMjBsaXZpbmclMjByb29tfGVufDB8fHx8fDE3NTQ2NjI5Njl8MA&ixlib=rb-4.1.0&q=80&w=1080', hint: 'apartment living room' },
+        { src: '/projects/residential-2.jpg', hint: 'apartment building' },
+        { src: '/projects/residential-2-interior-1.jpg', hint: 'modern apartment interior' },
+        { src: '/projects/residential-2-interior-2.jpg', hint: 'apartment living room' },
     ],
     description: 'An innovative apartment complex that seamlessly integrates green spaces and communal areas. The project features rooftop gardens, vertical farms, and shared courtyards, fostering a vibrant urban community where residents can connect with nature and each other. It sets a new standard for sustainable city living.',
     techStack: ['AutoCAD', 'Lumion', 'Green Building Studio', 'Biophilic Design']
@@ -63,9 +63,9 @@ const projects = [
     title: 'Innovate Hub', 
     category: 'Commercial', 
     images: [
-      { src: 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxvZmZpY2UlMjBidWlsZGluZ3xlbnwwfHx8fDE3NTQ2NTI1MzV8MA&ixlib=rb-4.1.0&q=80&w=1080', hint: 'office building exterior' },
-      { src: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb2xsYWJvcmF0aXZlJTIwd29ya3NwYWNlfGVufDB8fHx8fDE3NTQ2NjI5ODJ8MA&ixlib-rb-4.1.0&q=80&w=1080', hint: 'collaborative workspace' },
-      { src: 'https://images.unsplash.com/photo-1556761175-b413da4baf72?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjBvZmZpY2V8ZW58MHx8fHwxNzU0NjYyOTI4fDA&ixlib-rb-4.1.0&q=80&w=1080', hint: 'modern office meeting' },
+      { src: '/projects/commercial-2.jpg', hint: 'office building exterior' },
+      { src: '/projects/commercial-2-interior-1.jpg', hint: 'collaborative workspace' },
+      { src: '/projects/commercial-2-interior-2.jpg', hint: 'modern office meeting' },
     ],
     description: 'A forward-thinking office building designed to foster creativity and collaboration. The interior features modular workspaces, brainstorming pods, and a central atrium for events, setting a new benchmark for modern workspaces that adapt to the dynamic needs of innovative companies.',
     techStack: ['Revit', 'Navisworks', 'Insight', 'Agile Workspaces']
@@ -75,9 +75,9 @@ const projects = [
     title: 'Horizon Art Gallery', 
     category: 'Institutional', 
     images: [
-        { src: 'https://images.unsplash.com/photo-1583227564999-5221b6d1b8c2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzb2JlciUyMGFydCUyMGdhbGxlcnl8ZW58MHx8fHwxNzU0NzQxNDM0fDA&ixlib=rb-4.1.0&q=80&w=1080', hint: 'art gallery exterior' },
-        { src: 'https://images.unsplash.com/photo-1564942250176-3f13ad454b1e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhcnQlMjBnYWxsZXJ5JTIwaW50ZXJpb3J8ZW58MHx8fHwxNzU0NjYyOTk5fDA&ixlib-rb-4.1.0&q=80&w=1080', hint: 'art gallery interior' },
-        { src: 'https://images.unsplash.com/photo-1578326238965-985f4103c0d8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhcnQlMjBleGhpYml0fGVufDB8fHx8fDE3NTQ2NjMwMDh8MA&ixlib.rb-4.1.0&q=80&w=1080', hint: 'art exhibit' },
+        { src: '/projects/institutional-2.jpg', hint: 'art gallery exterior' },
+        { src: '/projects/institutional-2-interior-1.jpg', hint: 'art gallery interior' },
+        { src: '/projects/institutional-2-interior-2.jpg', hint: 'art exhibit' },
     ],
     description: 'A sculptural space crafted to showcase art, where the architecture itself becomes part of the immersive cultural experience. The design uses controlled natural light and flowing spaces to create a serene journey for visitors, allowing the art to take center stage while the building provides a dramatic backdrop.',
     techStack: ['SketchUp', '3ds Max', 'Adobe Creative Suite', 'Lighting Design']
@@ -172,3 +172,4 @@ export default function ProjectsPage() {
   );
 }
 
+    
