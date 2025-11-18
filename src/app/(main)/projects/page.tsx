@@ -8,6 +8,9 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter }
 import { Badge } from '@/components/ui/badge';
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from '@/components/ui/carousel';
 import Autoplay from "embla-carousel-autoplay";
+import ecoVistaView1 from '@/assets/projects/ecoVista/ecoVistaView1.jpg';
+import ecoVistaView2 from '@/assets/projects/ecoVista/ecoVistaView2.jpg';
+import ecoVistaView3 from '@/assets/projects/ecoVista/ecoVistaView3.jpg';
 
 const projects = [
   { 
@@ -15,9 +18,9 @@ const projects = [
     title: 'EcoVista Residences', 
     category: 'Residential', 
     images: [
-      { src: '/projects/ecoVista/ecoVistaView1.jpg', hint: 'sustainable apartment exterior' },
-      { src: '/projects/ecoVista/ecoVistaView2.jpg', hint: 'living room with green wall' },
-      { src: '/projects/ecoVista/ecoVistaView3.jpg', hint: 'rooftop garden terrace' },
+      { src: ecoVistaView1, hint: 'sustainable apartment exterior' },
+      { src: ecoVistaView2, hint: 'living room with green wall' },
+      { src: ecoVistaView3, hint: 'rooftop garden terrace' },
     ],
     description: 'EcoVista Residences sets a new standard for sustainable urban living. This project masterfully blends biophilic design with cutting-edge green technology, featuring vertical gardens, solar-paneled roofs, and a greywater recycling system. The result is a serene, self-sufficient community that coexists harmoniously with nature in the heart of the city.',
     techStack: ['Revit', 'Biophilic Design', 'LEED Platinum', 'Solar Integration', 'Water Harvesting']
@@ -81,6 +84,7 @@ export default function ProjectsPage() {
                                 className="object-cover transition-transform duration-500 ease-in-out group-hover/card:scale-105"
                                 data-ai-hint={image.hint}
                                 priority={idx < 2}
+                                placeholder="blur"
                               />
                             </div>
                           </CarouselItem>
