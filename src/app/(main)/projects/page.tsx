@@ -12,76 +12,16 @@ import Autoplay from "embla-carousel-autoplay";
 const projects = [
   { 
     id: 1, 
-    title: 'Serenity House', 
+    title: 'EcoVista Residences', 
     category: 'Residential', 
     images: [
-      { src: '/projects/residential-1.jpg', hint: 'modern house exterior' },
-      { src: '/projects/residential-1-interior-1.jpg', hint: 'modern house interior' },
-      { src: '/projects/residential-1-interior-2.jpg', hint: 'modern living room' },
+      { src: '/media/projects/ecoVista/ecoVista-1.jpg', hint: 'sustainable apartment exterior' },
+      { src: '/media/projects/ecoVista/ecoVista-2.jpg', hint: 'living room with green wall' },
+      { src: '/media/projects/ecoVista/ecoVista-3.jpg', hint: 'rooftop garden terrace' },
     ],
-    description: 'A masterpiece of modern residential design, this home balances sharp lines with natural materials to create a peaceful and welcoming environment. The open-plan living spaces are flooded with natural light, seamlessly connecting the interior with the surrounding landscape. Every detail, from the custom cabinetry to the curated art, is a testament to bespoke luxury and thoughtful design.',
-    techStack: ['AutoCAD', 'SketchUp', 'V-Ray', 'Sustainable Materials']
+    description: 'EcoVista Residences sets a new standard for sustainable urban living. This project masterfully blends biophilic design with cutting-edge green technology, featuring vertical gardens, solar-paneled roofs, and a greywater recycling system. The result is a serene, self-sufficient community that coexists harmoniously with nature in the heart of the city.',
+    techStack: ['Revit', 'Biophilic Design', 'LEED Platinum', 'Solar Integration', 'Water Harvesting']
   },
-  { 
-    id: 2, 
-    title: 'Quantum Tower', 
-    category: 'Commercial', 
-    images: [
-      { src: '/projects/commercial-1.jpg', hint: 'skyscraper exterior' },
-      { src: '/projects/commercial-1-interior-1.jpg', hint: 'office lobby' },
-      { src: '/projects/commercial-1-interior-2.jpg', hint: 'modern office' },
-    ],
-    description: 'A cutting-edge high-rise that redefines the city skyline. Quantum Tower features a double-skin facade for energy efficiency and a sky garden on every tenth floor, offering a new era of business with a focus on employee well-being and sustainable operation. Its dynamic form is both an architectural statement and a functional masterpiece.',
-    techStack: ['Revit', 'BIM 360', 'Dynamo', 'LEED Certified']
-  },
-  { 
-    id: 3, 
-    title: 'Civic Knowledge Center', 
-    category: 'Institutional', 
-    images: [
-        { src: '/projects/institutional-1.jpg', hint: 'public library exterior' },
-        { src: '/projects/institutional-1-interior-1.jpg', hint: 'library interior' },
-        { src: '/projects/institutional-1-interior-2.jpg', hint: 'reading area' },
-    ],
-    description: 'A dynamic hub for learning and community engagement. The design features a grand central atrium that connects all floors, encouraging interaction and discovery. With flexible layouts, digital labs, and quiet reading nooks, it is a space designed to inspire and adapt to the evolving needs of its community.',
-    techStack: ['ArchiCAD', 'Rhino', 'Grasshopper', 'Community-Centric Design']
-  },
-  { 
-    id: 4, 
-    title: 'The Urban Oasis', 
-    category: 'Residential', 
-    images: [
-        { src: '/projects/residential-2.jpg', hint: 'apartment building' },
-        { src: '/projects/residential-2-interior-1.jpg', hint: 'modern apartment interior' },
-        { src: '/projects/residential-2-interior-2.jpg', hint: 'apartment living room' },
-    ],
-    description: 'An innovative apartment complex that seamlessly integrates green spaces and communal areas. The project features rooftop gardens, vertical farms, and shared courtyards, fostering a vibrant urban community where residents can connect with nature and each other. It sets a new standard for sustainable city living.',
-    techStack: ['AutoCAD', 'Lumion', 'Green Building Studio', 'Biophilic Design']
-  },
-  { 
-    id: 5, 
-    title: 'Innovate Hub', 
-    category: 'Commercial', 
-    images: [
-      { src: '/projects/commercial-2.jpg', hint: 'office building exterior' },
-      { src: '/projects/commercial-2-interior-1.jpg', hint: 'collaborative workspace' },
-      { src: '/projects/commercial-2-interior-2.jpg', hint: 'modern office meeting' },
-    ],
-    description: 'A forward-thinking office building designed to foster creativity and collaboration. The interior features modular workspaces, brainstorming pods, and a central atrium for events, setting a new benchmark for modern workspaces that adapt to the dynamic needs of innovative companies.',
-    techStack: ['Revit', 'Navisworks', 'Insight', 'Agile Workspaces']
-  },
-  { 
-    id: 6, 
-    title: 'Horizon Art Gallery', 
-    category: 'Institutional', 
-    images: [
-        { src: '/projects/institutional-2.jpg', hint: 'art gallery exterior' },
-        { src: '/projects/institutional-2-interior-1.jpg', hint: 'art gallery interior' },
-        { src: '/projects/institutional-2-interior-2.jpg', hint: 'art exhibit' },
-    ],
-    description: 'A sculptural space crafted to showcase art, where the architecture itself becomes part of the immersive cultural experience. The design uses controlled natural light and flowing spaces to create a serene journey for visitors, allowing the art to take center stage while the building provides a dramatic backdrop.',
-    techStack: ['SketchUp', '3ds Max', 'Adobe Creative Suite', 'Lighting Design']
-  }
 ];
 
 const categories = ['All', 'Residential', 'Commercial', 'Institutional'];
@@ -171,5 +111,3 @@ export default function ProjectsPage() {
     </div>
   );
 }
-
-    
