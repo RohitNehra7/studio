@@ -75,8 +75,8 @@ const projects = [
     title: 'Horizon Art Gallery', 
     category: 'Institutional', 
     images: [
-        { src: 'https://images.unsplash.com/photo-1583227564999-5221b6d1b8c2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzb2JlciUyMGFydCUyMGdhbGxlcnl8ZW58MHx8fHwxNzU0NzQxNDM0fDA&ixlib=rb-4.1.0&q=80&w=1080', hint: 'art gallery exterior' },
-        { src: 'https://images.unsplash.com/photo-1564942250176-3f13ad454b1e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhcnQlMjBnYWxsZXJ5JTIwaW50ZXJpb3J8ZW58MHx8fHwxNzU0NjYyOTk5fDA&ixlib=rb-4.1.0&q=80&w=1080', hint: 'art gallery interior' },
+        { src: 'https://images.unsplash.com/photo-1583227564999-5221b6d1b8c2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzb2JlciUyMGFydCUyMGdhbGxlcnl8ZW58MHx8fHwxNzU0NzQxNDM0fDA&ixlib-rb-4.1.0&q=80&w=1080', hint: 'art gallery exterior' },
+        { src: 'https://images.unsplash.com/photo-1564942250176-3f13ad454b1e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhcnQlMjBnYWxsZXJ5JTIwaW50ZXJpb3J8ZW58MHx8fHwxNzU0NjYyOTk5fDA&ixlib-rb-4.1.0&q=80&w=1080', hint: 'art gallery interior' },
         { src: 'https://images.unsplash.com/photo-1578326238965-985f4103c0d8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhcnQlMjBleGhpYml0fGVufDB8fHx8fDE3NTQ2NjMwMDh8MA&ixlib.rb-4.1.0&q=80&w=1080', hint: 'art exhibit' },
     ],
     description: 'A sculptural space crafted to showcase art, where the architecture itself becomes part of the immersive cultural experience.',
@@ -191,5 +191,3 @@ export default function ProjectsPage() {
     </>
   );
 }
-
-    
