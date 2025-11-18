@@ -15,9 +15,9 @@ const projects = [
     title: 'EcoVista Residences', 
     category: 'Residential', 
     images: [
-      { src: '/projects/ecoVista/ecoVista-1.jpg', hint: 'sustainable apartment exterior' },
-      { src: '/projects/ecoVista/ecoVista-2.jpg', hint: 'living room with green wall' },
-      { src: '/projects/ecoVista/ecoVista-3.jpg', hint: 'rooftop garden terrace' },
+      { src: '/projects/ecoVista/ecoVistaView1.jpg', hint: 'sustainable apartment exterior' },
+      { src: '/projects/ecoVista/ecoVistaView2.jpg', hint: 'living room with green wall' },
+      { src: '/projects/ecoVista/ecoVistaView3.jpg', hint: 'rooftop garden terrace' },
     ],
     description: 'EcoVista Residences sets a new standard for sustainable urban living. This project masterfully blends biophilic design with cutting-edge green technology, featuring vertical gardens, solar-paneled roofs, and a greywater recycling system. The result is a serene, self-sufficient community that coexists harmoniously with nature in the heart of the city.',
     techStack: ['Revit', 'Biophilic Design', 'LEED Platinum', 'Solar Integration', 'Water Harvesting']
